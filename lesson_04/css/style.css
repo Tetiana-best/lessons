@@ -45,26 +45,32 @@ body {
 h1{
 	font-size: 36px;
 	font-weight: 950;
-	text-align: center;
+	text-align: justify;
 	font-style: oblique;
 	color: violet;
 	text-transform: lowercase;
 	letter-spacing: 2px;
+
 }
 
-h2{
-	font-size: 24px;
+h2,
+.designer h2{
+	font-size: 30px;
 	font-weight: 900;
-	text-align: justify;
+	text-align: center;
 	font-style: italic;
-	color: rgba(557, 168, 51, 0.7);
+	color: rgb(255, 51, 51);
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	line-height: 1.8;
 }
 
 h3 {
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: 800;
 	text-align: center;
 	color: #091a79;
+	line-height: 1.5;
 }
 h4 {
 	text-decoration: underline;
@@ -75,11 +81,20 @@ h4 {
 a {
 	text-decoration: underline;
 }
-span {
+mark {
+	font-family: "Poppins";
+	font-size: 20px;
 	font-weight: 600;
-	text-decoration: overline;
+	text-decoration: underline;
+	font-style: italic;
 	text-decoration-color: red;
 	text-decoration-style: wavy;
+}
+span {
+	font-weight: 600;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: 5px;
 }
 .subject {
 	font-size: 20px;
@@ -89,13 +104,14 @@ span {
 }
 .subject li {
 	font-size: 15px;
-	font-weight: 100;
+	font-weight: 100;	
 	font-style: none;
 	text-align: right;
 	
 }
 [class*="-text"] {
-	color: rgb(000, 0, 0);
+	color: rgb(80, 80, 80);
+
 }
 
 .laba-title {
@@ -107,9 +123,15 @@ span {
 	line-height: 1.2;
 	letter-spacing: 1.5px;
 }
-
-.laba-marketing h3{
-	text-shadow: 5px 5px 4px #FF0000, 6px -7px 6px #FF00FF;
+.subtitle-text span {
+	text-decoration-thickness: 5px;
+	text-decoration-color: #18b5a4;
+	font-weight: 600;
+}
+.laba-marketing h3,
+.laba-title h3 {
+	text-shadow: 5px 5px 4px #FF0000, 6px -7px 6px #1e031e;
+	color: #18b5a4;
 }
 .marketing-text {
 	text-transform: capitalize;
@@ -120,7 +142,9 @@ span {
 }
 
 
-.fonts *{
+.fonts *,
+.contacts span,
+.designer-title h2 {
 text-decoration: none;
 }
 .designer {}
