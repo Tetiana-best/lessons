@@ -1,0 +1,49 @@
+@import url("reset.css");
+* {
+	color: brown;
+}
+li {
+	color: blue;
+}
+.subject {
+	color: green;
+}
+#know-subtitle {
+	color: red
+}
+[class*="__text"]{
+	color: orange;;
+}
+div.tegclass {
+	color: black;
+}
+.probe.twoclass {
+	color: yellow;
+}
+.helikopter__text,
+.oak__text {
+	color: pink;
+}
+.know__text p {
+	color: green;
+}
+
+.more__trembita .trembita__text {
+	color: black;
+}
+
+.facts__text * {
+	color: red;
+}
+.know__text > p {
+	color: yellow;
+}
+.tag-p-student ~ p {
+	color: blue;
+}
+
+.tag-p-student+p {
+	color: green;
+}
+
+
