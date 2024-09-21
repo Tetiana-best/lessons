@@ -1,0 +1,238 @@
+
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+
+/* ------------------------------------------------------------------ */
+body {
+	max-width: 1617px;
+	padding: 15px;
+
+}
+
+.homework5 {
+	font-size: 36px;
+	text-align: center;
+	font-weight: 900;
+	color: red;
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	margin-block-end: 15px;
+}
+
+.subject {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+ul li{
+	font-size: 18px;
+	margin: 10px;
+}
+
+
+/* --------------------------------- */
+
+.lending-intro,
+.lending-design {
+	font-family: "Roboto";
+	color: #091133;
+}
+
+.lending-intro {
+	max-width: 539px;
+}
+
+.lending-intro-title {
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 66px;
+	letter-spacing: 1px;
+	margin-block-end: 20px;
+}
+
+.lending-intro-text {
+	font-size: 18px;
+	line-height: 30px;
+	color: #505F98;
+	margin-block-end: 69px;
+}
+
+.lending-intro-text p,
+.lending-design-text p{
+	margin-block-end: 15px;
+}
+
+.lending-intro-buttons {
+	font-weight: 500;
+	line-height: 26px;
+}
+.button-p,
+.button-l{
+	margin-inline-end: 30px;
+	border: 1px solid #000;
+	display: inline-block;
+	padding-inline: 15px;
+}
+
+/* -------------------------------- */
+
+.lending-design {
+	max-width: 520px;
+}
+.lending-design-about{
+	margin-block-end: 70px;
+}
+.lending-design-title {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 48px;
+	margin-block-end: 16px;
+}
+.lending-design-text {
+	line-height: 26px;
+	color: #6F7CB2;
+}
+
+
+
+.lending-design-element {
+	max-width: 520px;
+	/* background-color: green;  */
+	margin-inline: auto;
+}
+.lending-design-items {
+	max-width: 520px;
+	margin-inline: -15px;
+	font-size: 0px;
+}
+.lending-design-item {
+	width: 50%;
+	display: inline-block;
+	background-color: red;
+	padding-inline: 15px;
+	margin-block-end: 30px;
+	border: 1px solid #000;
+}
+.lending-content {
+	/* margin: 5px 30px 30px 5px; */
+	/* background-color: blue; */
+}
+.item-label {
+	margin-block-end: 14px;
+}
+.item-subtitle {
+	font-weight: 500;
+	line-height: 26px;
+	margin-block-end: 6px;
+}
+.item-text {
+	font-size: 12px;
+	line-height: 18px;
+	color: #5D6970;
+	/* margin-block-end: 2px; */
+}
+
+
+/* ---------- */
+
+.dark {
+	font-family: "Manrope";
+	max-width: 1597px;
+	background-color: #141414;
+	padding: 15px;
+}
+
+.dark-about {
+	max-width: 1297px;
+	line-height: 1.5;
+	margin-block-end: 80px;
+}
+
+
+.dark-about-title {
+	font-size: 38px;
+	font-weight: 700;
+	color: #fff;
+	margin-block-end: 14px;
+}
+
+.dark-about-text,
+.dark-item-text {
+	font-size: 18px;
+	color: #999;
+}
+
+.dark-element {
+	max-width: 1597px;
+	margin-inline: auto;
+}
+
+.dark-items {
+	margin-inline: -15px;
+	font-size: 0;
+}
+
+.dark-item {
+	width: 33.333%;
+	display: inline-block;
+	padding-inline: 15px;
+	border: 1px solid #fff;
+	margin-bottom: 30px;
+}
+
+.dark-item-body {
+	margin: 30px;
+}
+
+.dark-item-title {
+	margin-block-end: 30px;
+}
+
+.dark-item-label {
+	display: inline-block;
+	vertical-align: middle;
+	margin-inline-end: 32px;
+}
+
+.dark-item-subtitle {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+}
+
+
+
+.my {
+	font-size: 24px;
+	font-weight: 900;
+	color: blue;
+}
+
+/* .section {
+	max-width: 500px;
+	margin-inline: auto;
+	background: brown;
+}
+
+.items {
+	margin-inline: -5px;
+	font-size: 0;
+}
+
+.item {
+	width: 33.333%;
+	display: inline-block;
+	margin-block-end: 10px;
+	padding-inline: 5px;
+}
+
+.content {
+	background-color: green;
+	text-align: center;
+	padding: 25px;
+	font-size: 24px;
+} */
