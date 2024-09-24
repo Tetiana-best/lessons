@@ -8,15 +8,16 @@
 body {
 	font-family: "Manrope";
 	background-color: #d6f5f0;
-	max-width: 1950px;
-	margin-inline: auto;
-	padding: 15px;
+
 }
 .wrapper {
 	min-height: 100%;
 	overflow: hidden;
 }
 .container {
+	max-width: 1950px;
+	margin-inline: auto;
+	padding: 15px;
 }
 .header {
 	margin-block-end: 30px;
@@ -228,6 +229,7 @@ padding-inline-start: 500px;
 .lending-intro-buttons {
 	font-weight: 500;
 	line-height: 26px;
+	font-size: 0;
 }
 .button-p,
 .button-l{
@@ -235,6 +237,7 @@ padding-inline-start: 500px;
 	border: 1px solid #000;
 	display: inline-block;
 	padding-inline: 15px;
+	font-size: 16px;
 }
 
 /* -------------------------------- */
@@ -268,6 +271,7 @@ padding-inline-start: 500px;
 	display: inline-block;
 	padding-inline: 15px;
 	padding-block: 15px;	
+	font-size: 16px;
 }
 .lending-content {
 
