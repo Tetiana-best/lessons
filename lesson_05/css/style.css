@@ -276,6 +276,10 @@ padding-inline-start: 500px;
 	max-width: 209px;
 	margin-block-end: 14px;
 }
+
+.item-label img {
+	max-width: 36px;
+}
 .item-subtitle {
 	font-weight: 500;
 	line-height: 26px;
@@ -333,6 +337,7 @@ padding-inline-start: 500px;
 	margin-bottom: 30px; 
 }
 
+
 .dark-item-body {
 	padding: 50px;
 	/* border: 1px solid #fff; */
@@ -348,6 +353,16 @@ padding-inline-start: 500px;
 	display: inline-block;
 	vertical-align: middle;
 	margin-inline-end: 32px;
+}
+
+.dark-item-label {
+	display: inline-block;
+	vertical-align: middle;
+	margin-inline-end: 32px;
+}
+
+.dark-item-label img{
+	max-width: 38px;
 }
 
 .dark-item-subtitle {
