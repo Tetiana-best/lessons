@@ -1,0 +1,35 @@
+
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900");@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+
+/* ------------------------------------------------------------------ */
+body {
+
+}
+.wrapper{
+	min-height: 100%;
+	overflow: hidden; /* clip */
+}
+.page {
+	padding: 30px;
+}
+.container {
+	max-width: 1140px;
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+.block{
+background-color: #77608d ;
+border-top: 10px solid red;
+border-right: 10px dashed blue;
+border-bottom: 10px dotted yellow;
+border-left: 10px double green;
+}
+.inline {
+	background-color: #7a956b;
+}
+.inline-block {
+	width: 300px;
+	background-color: #794f45;
+}

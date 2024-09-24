@@ -6,13 +6,20 @@
 
 /* ------------------------------------------------------------------ */
 body {
-	font-family: "Roboto";
-}
-.wrapper{
+	font-family: "Manrope";
+	background-color: #d6f5f0;
 	max-width: 1950px;
-	padding: 15px;
-	background-color: #abdad3;
 	margin-inline: auto;
+	padding: 15px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+}
+.header {
+	margin-block-end: 30px;
 }
 h1 {
 	font-size: 40px;
@@ -25,28 +32,29 @@ h1 {
 	text-shadow: 2px 2px 1px #111111 ;
 	margin-block-end: 40px;
 }
-.header{
-	margin-block-end: 20px;
-}
 .header h2 {
 	font-size: 28px;
 	font-weight: 700;
+	margin-block-end: 20px;
 }
 
 ul li{
 	font-size: 20px;
-	margin: 10px;
 	font-style: italic;
 	font-weight: 700;
+	margin: 0 0 10px 0;
 }
 
 /* --------------------------------- */
-.praktik {}
-
+.page {
+	margin-block-end: 20px;
+}
+.praktik {
+	margin-block-end: 20px;
+}
 .praktik-header {
 	margin-block-end: 20px;
 }
-
 .praktik-header-title {}
 
 .praktik-header-title h2 {
@@ -73,8 +81,9 @@ ul li{
 	margin-block-end: 50px;
 }
 
-.praktik-header-item {
+.praktik-header-item img{
 	max-width: 1910px;
+	margin-inline: auto;
 }
 
 .praktik-main {
@@ -104,7 +113,7 @@ ul li{
 	}
 
 .praktik-main-nero {
-	
+	margin-block-end: 20px;
 }
 .praktik-main-nero p {
 	font-size: 18px;
@@ -130,6 +139,7 @@ ul li{
 }
 .nero-auto img{
 	max-width: 860px;
+	margin-inline: auto;
 }
 .nero-user {
 	margin-block-end: 20px;
@@ -160,9 +170,7 @@ padding-inline-start: 500px;
 	font-style: italic;
 	}
 
-.praktik-footer {
-	margin-block-end: 20px;
-}
+.praktik-footer {}
 
 .praktik-footer h4{
 	font-size: 24px;
@@ -191,16 +199,11 @@ padding-inline-start: 500px;
 .lending-intro,
 .lending-design {
 	font-family: "Roboto";
-	color: #091133;
-	background-color: #fff;
-	margin-inline: auto;
-	margin-block: 30px;
-	padding: 15px;
-
-}
-
-.lending-intro {
 	max-width: 539px;
+	margin-inline: auto;
+	background-color: #fff;
+	padding: 15px;
+	margin-block-end: 30px;
 }
 
 .lending-intro-title {
