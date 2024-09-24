@@ -7,12 +7,13 @@
 /* ------------------------------------------------------------------ */
 body {
 	font-family: "Roboto";
-	max-width: 1920px;
+}
+.wrapper{
+	max-width: 1950px;
 	padding: 15px;
 	background-color: #abdad3;
 	margin-inline: auto;
 }
-
 h1 {
 	font-size: 40px;
 	text-align: center;
@@ -20,11 +21,13 @@ h1 {
 	color: #ff0000;
 	text-decoration: underline;
 	text-decoration-thickness: 5px;
-	margin-block-end: 40px;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 1px #111111 ;
+	margin-block-end: 40px;
 }
-.header{}
+.header{
+	margin-block-end: 20px;
+}
 .header h2 {
 	font-size: 28px;
 	font-weight: 700;
@@ -37,13 +40,12 @@ ul li{
 	font-weight: 700;
 }
 
-header {
-	margin-block-end: 20px;
-}
 /* --------------------------------- */
 .praktik {}
 
-.praktik-header {}
+.praktik-header {
+	margin-block-end: 20px;
+}
 
 .praktik-header-title {}
 
@@ -55,35 +57,33 @@ header {
 	text-shadow: 3px 4px 1px #140202;
 	text-decoration: underline;
 	text-decoration-style: wavy;
-	margin-block-end: 20px;
 	padding: 30px;
 	background-color: #10d1d8;
+	margin-block-end: 20px;
 }
 
 .praktik-header-text {
 	font-size: 18px;
 	line-height: 1.2;
-	margin-block-end: 50px;
 	text-indent: 20px;
 	width: 500px;
 	height: 200px;
 	background-color: rgb(245, 245, 42);
-	
 	overflow: hidden;
-	
+	margin-block-end: 50px;
 }
 
 .praktik-header-item {
-	background-color: #fff;
-	margin-block-end: 20px;
-
+	max-width: 1910px;
 }
 
 .praktik-main {
 	margin-block-end: 20px;
 }
 
-.praktik-main-techno {}
+.praktik-main-techno {
+	margin-block-end: 20px;
+}
 
 .praktik-main-techno h3,
 .praktik-main-nero h3 {
@@ -98,26 +98,19 @@ header {
 		font-size: 18px;
 		text-indent: 20px;
 		line-height: 1.2;
-		margin-block-end: 20px;
 		height: 100px;
 		background-color: yellow;
 		overflow: scroll;
 	}
 
-
-.praktik-main-nero p {
-		font-size: 18px;
-		text-indent: 20px;
-		line-height: 1.2;
-		margin-block-end: 20px;
-
-	}
-
 .praktik-main-nero {
-		max-width: 1500px;
-		margin: 0 auto;
+	
 }
-
+.praktik-main-nero p {
+	font-size: 18px;
+	text-indent: 20px;
+	line-height: 1.2;
+}
 
 .nero-auto {
 	margin-bottom: 20px;
@@ -127,6 +120,7 @@ header {
 	height: 100px;
 	background-color: yellow;
 	overflow: auto;
+	margin-block-end: 20px;
 }
 
 .nero-auto span,
@@ -134,9 +128,10 @@ header {
 	font-weight: bold;
 	font-style: italic;
 }
-
+.nero-auto img{
+	max-width: 860px;
+}
 .nero-user {
-
 	margin-block-end: 20px;
 }
 
@@ -148,6 +143,7 @@ padding-inline-start: 500px;
 }
 .nero-user img{
 	display: inline-block;
+	max-width: 819px;
 }
 
 .nero-opti {}
@@ -164,7 +160,9 @@ padding-inline-start: 500px;
 	font-style: italic;
 	}
 
-.praktik-footer {}
+.praktik-footer {
+	margin-block-end: 20px;
+}
 
 .praktik-footer h4{
 	font-size: 24px;
