@@ -49,7 +49,7 @@ body {}
 
 }
 .portfolio-container {
-	max-width: 1170px;
+	max-width: 1201px;
 	margin-inline: auto;
 	padding: 15px;
 
@@ -67,6 +67,10 @@ body {}
 .portfolio-content {
 	max-width: 470px;
 	font-size: 16px;
+
+}
+.portfolio-block-text {
+	/* margin-inline-end: 171px; */
 }
 .portfolio-content-title {
 	margin-block-end: 26px;
@@ -108,10 +112,11 @@ body {}
 	padding-block-start: 5px;
 }
 .portfolio-item {
-	margin-inline-start: 90px;
+
 }
 .portfolio-image {
 	display: inline-block;
+	margin-inline-start: 171px;
 }
 .portfolio-image img {
 	max-width: 470px;
