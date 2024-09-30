@@ -62,15 +62,15 @@ body {}
 	/* width: 50%; */
 	display: inline-block;
 	vertical-align: top;
-	padding-inline: 5px;
+	/* padding-inline: 5px; */
 }
 .portfolio-content {
 	max-width: 470px;
 	font-size: 16px;
 
 }
-.portfolio-block-text {
-	/* margin-inline-end: 171px; */
+.portfolio-text {
+	margin-inline-end: 171px;
 }
 .portfolio-content-title {
 	margin-block-end: 26px;
@@ -116,7 +116,6 @@ body {}
 }
 .portfolio-image {
 	display: inline-block;
-	margin-inline-start: 171px;
 }
 .portfolio-image img {
 	max-width: 470px;
