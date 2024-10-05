@@ -315,17 +315,14 @@ ol li::before {
 	line-height: 1.1;
 	opacity: 0.6;
 }
-
 .bisness-price-list {
 	font-size: 28px;
 	line-height: 1.35714;
 	color: #1E1B39;
 }
-
 .item-bisness-list:not(:last-of-type) {
 	margin-block-end: 26px;
 }
-
 .item-bisness-list::before{
 	content: "";
 	background: url("../img/№3_bisness-pracing-check.svg") left / 36px no-repeat;
@@ -335,7 +332,9 @@ ol li::before {
 	vertical-align: middle;
 }
 /* -----------------GAME-------------------- */
-.game {}
+.game {
+	font-family: "Caveat", serif;
+}
 .game-container {
 	max-width: 1000px;
 	height: 667px;
@@ -358,6 +357,7 @@ ol li::before {
 	margin-top: 400px;
 	margin-left: 15px;
 	display: inline-block;
+	position: relative;
 }
 .line:nth-child(2) {
 	background: url("../img/game_ladder_vertical.jpg") center / 100% repeat;
@@ -365,6 +365,7 @@ ol li::before {
 	height: 207px;
 	margin-top: -206px;
 	margin-left: 115px;
+	position: relative;
 }
 .line:nth-child(3) {
 	background: url("../img/water_piper_2.png") center / 100% repeat;
@@ -382,7 +383,6 @@ ol li::before {
 	margin-top: -100px;
 	margin-left: 345px;
 }
-
 .line:nth-child(5) {
 	background: url("../img/water_piper_2.png") center / 100% repeat;
 	width: 540px;
@@ -427,13 +427,246 @@ ol li::before {
 	visibility: visible;
 }
 
+/* ----------PRACTICE----------------- */
 
-
-/* .game-main p {
-	margin: 372px 0px 0 15px;
-	display: inline-block;
-	font-size: 30px;
-	font-weight: 900;
-	text-transform: uppercase;
+.practice {
+	font-family: "Caveat", serif;
+	background: url("../img/2.png");
+}
+.practice-container {
+	min-width: 100%;
+	margin-inline: auto;
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	font-size: 36px;
+}
+.practice h3{
+	font-size: 48px;
+	color: blue;
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	text-shadow: 3px -3px 2px #fff;
+	text-align: center;
+	margin-block-end: 15px;
+}
+.practice h4 {
+	font-size: 48px;
+	text-align: center;
+	color: greenyellow;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	margin-block-end: 15px;
+}
+.pseudo-state {
+	margin-block-end: 30px;
+}
+.pseudo-state p,
+.pseudo-position p {
+	margin-block-end: 10px;
+}
+.pseudo-state a {
+	font-size: 36px;
+	font-weight: 700;
+	color: darkorange;
+	text-shadow: 5px 5px 3px #000;
+	background: darkcyan;
+	border-right: 1px solid #000;
+	border-radius: 50px;
+	padding: 10px;
+	transform: scale (1.95);
+	letter-spacing: 1px;
+	text-align: center;
+	margin-block: 5px;
+}
+.hover:hover {
+	box-shadow: 5px -5px 4px yellow;
 	color: red;
-} */
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	transition: all 0.5s steps(2, start) 0s;
+} 
+/* ----Появи елементів при наведені курсору на батьківський елемент---- */
+
+/* батьківський блок зі стилями */
+.father-child, 
+.target-block {
+	background-color: #000;
+	border: 2px solid red;
+	border-radius: 10px;
+	padding: 15px;
+	max-width: 450px;
+	margin: 0 auto;
+}
+.link {}
+
+/* зміна кольору для link при наведенні курсору на батьківський елемент */
+.father-child:hover .link {
+	color: greenyellow;
+	background-color: transparent;
+}
+/* приховування картинки */
+.image {
+	display: none;
+}
+/* поява image при наведенні курсору на батьківський елемент */
+.father-child:hover .image {
+	display: block;
+}
+/* -----------------Псевдокласи стану------------------------- */
+.active:active {
+	color: blueviolet;
+	text-decoration: underline;
+	font-family: "Manrope", serif;
+}
+.visited:visited {
+	color: blue;
+	text-decoration: underline;
+	text-decoration-style: double;
+	/* text-decoration: line-through; */
+}
+.focus:focus {
+	background-color: greenyellow;
+	text-decoration: line-through;
+	color: red;
+}
+/* --звернення до елемента у стані "ефекту від посилання з іншого об'єкту": */
+.target {
+	margin-block-end: 100px;
+}
+/* стилізується блок та приховуєьться в цьому випадку за допомогою display: none; */
+.target-block {
+	display: none;
+	padding: 5px;
+}
+/* поява елементу при кліку на певне посилання */
+.target-block:target {
+	display: block;
+}
+
+/* ------Псевдокласи положення-------- */
+
+.pseudo-position {}
+
+.pseudo-position span{
+	text-transform: uppercase;
+}
+.position {
+ 	width: 30px;
+ 	height: 30px;
+ 	border-radius: 100% 0% 64% 36% / 62% 30% 70% 38%;
+	background: darkcyan;
+	display: inline-block;
+ }
+.first-child {}
+.first-child .first-ch-block:first-child{
+	background-color: red;
+}
+.first-of-type {}
+.first-of-type .first-ty-block:first-of-type{
+	background-color: red;
+}
+.last-child {}
+.last-child .last-ch-block:last-child{
+	background-color: red;
+}
+.last-of-type {}
+.last-of-type .last-ty-block:last-of-type {
+	background-color: red;
+}
+.nth-child {}
+.nth-child .ntf-ch-block:nth-child(4) {
+	background-color: red;
+}
+.nth-child-odd {}
+.nth-child-odd .ntf-ch-odd-block:nth-child(odd) {
+	background-color: red;
+}
+.nth-child-even {}
+.nth-child-even .ntf-ch-even-block:nth-child(even) {
+	background-color: red;
+}
+.nth-child-n3 .n3-block:nth-child(n+3) {
+	background-color: yellow;
+}
+.nth-child-3n .block-3n:nth-child(3n) {
+	background-color: yellow;
+}
+.nth-child-3n-1 .block-3n-1:nth-child(3n-1) {
+	background-color: yellow;
+}
+.nth-child-3n1 .block-3n1:nth-child(3n+1) {
+	background-color: yellow;
+}
+.not {}
+.not .not-block:not(:last-child,:nth-child(3)) {
+	background-color: blueviolet;
+}
+.has {}
+.has:has(.has-block-1) {
+	border: 5px solid green;
+	display: inline-block;
+	border-radius: 30px;
+	padding: 10px;
+}
+/* ------Псевдоелемент------- */
+
+.psevdoelement {}
+.psevdoelement p:first-child {
+	font-size: 48px;
+	text-decoration: underline;
+	color: greenyellow;
+}
+.befor {}
+
+.befor-list {}
+
+/* стилізація псевдоелементу */
+.befor-list li::before {
+	content: "";
+	background: url('../img/bisnes_rocket_icon.jpg') 0 0 / 43px no-repeat;
+	width: 43px;
+	height: 43px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.8s ease 0s;
+}
+/* зміна стилів при наведені на елемент li */
+.befor-list li:hover::before {
+	transform: scale(1.5);
+}
+.list {}
+
+.after {}
+
+.after-list {}
+
+.after-list li::after {
+	content: "";
+	background: url('../img/bisnes_lupa_icon.jpg') 0 0 / 43px no-repeat;
+	width: 43px;
+	height: 43px;
+	display: inline-block;
+	margin-right: 10px;
+}
+/* зміна стилів при наведені на елемент li */
+.after-list li:hover::after {
+	background: url('../img/bisnes_laptop_icon.jpg') 0 0 / 43px no-repeat;
+	transition: all 0.8s ease 0s;
+	transform: scale(1.5);
+}
+
+footer {
+		background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 0.8855917366946778) 31%, rgba(0, 255, 226, 1) 100%);
+		border: 5px solid #000;
+		border-radius: 40%;
+		text-align: center;
+		font-size: 36px;
+		color: #ff0000;
+		text-shadow: 5px 5px 3px #111111;
+		padding-block: 20px;
+}
+
+
+
