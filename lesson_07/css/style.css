@@ -475,10 +475,9 @@ ol li::before {
 	border-right: 1px solid #000;
 	border-radius: 50px;
 	padding: 10px;
-	transform: scale (1.95);
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	text-align: center;
-	margin-block: 5px;
+	margin-block-end: 5px;
 }
 .hover:hover {
 	box-shadow: 5px -5px 4px yellow;
