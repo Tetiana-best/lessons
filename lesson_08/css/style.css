@@ -92,7 +92,7 @@ body {}
 	margin-block-end: 30px;
 }
 .practice-art-image {
-	margin-block-end: 50px;
+	margin-block-end: 20px;
 }
 .art-image-items {
 	font-size: 0;
@@ -159,7 +159,7 @@ body {}
 	text-shadow: 2px 2px 1px #000;
 	margin-block-end: 15px;
 }
-.item-raster-content img {
+.item-raster-content > img {
 	margin-block-end: 10px;
 }
 
@@ -178,7 +178,7 @@ body {}
 }
 .homework-formats-item {
 	display: inline-block;
-	max-width: 50%;
+	max-width: 33.333%;
 	padding-inline: 15px;
 	vertical-align: top;
 	text-align: center;
@@ -194,10 +194,10 @@ body {}
 	text-align: center;
 	text-decoration: underline;
 }
-.homework-formats-content img,
+.homework-formats-content > img,
 .icon-play,
 .icon {
-	margin-right: 30px;
+	margin-right: 15px;
 	vertical-align: middle;
 }
 .icon-play {
@@ -213,12 +213,9 @@ body {}
 
 .icon-play img{
 	max-width: 32px;
-	display: block;
-	margin-inline: auto;
 	width: 100%;
 	vertical-align: middle;
 }
-
 .icon {
 	display: inline-block;
 	width: 112px;
@@ -228,16 +225,43 @@ body {}
 	background-color: #EF6C57;
 	text-align: center;
 }
-
-.icon-calendar img {
+.icon-calendar img,
+.icon-project img {
 	max-width: 48px;
 	width: 100%;
+	vertical-align: middle;
 }
-
 .designer-foto {
 	max-width: 100%;
 }
-.designer-foto img,
-.designer-foto {
+
+/* --------------------- */
+.homework-screen {}
+
+.homework-screen h4{
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+	color: blueviolet;
+	text-shadow: 2px 2px 1px #000;
 	margin-block-end: 15px;
 }
+
+.homework-screen-container {
+	text-align: center;
+}
+.homework-screen-foto {
+
+}
+
+.screen-foto-webp img{
+	border-radius: 6px;
+}
+
+/* .image-x1,
+.image-x2,
+.image-x3,
+.image-x4,
+.image-x{
+max-width: 1170px;
+} */
