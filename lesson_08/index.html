@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_08_Web_Графіка</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header lang="uk" class="header">
+			<h1>Урок 8 "Web_Графіка"</h1>
+			<p>Зміст: </p>
+			<ul class="header-list">
+				<li class="header-list-item"><a href="#practice-subtitle" title="Перейти до розділу 1">Практика</a></li>
+				<li class="header-list-item"><a href="#homework-subtitle" title="Перейти до розділу 2">Домашнє завдання</a>
+				</li>
+			</ul>
+		</header>
+		<main class="page">
+			<div class="page-container">
+				<div class="practice" id="practice-subtitle">
+					<h2>Практика</h2>
+					<p>Основне правило WEB-графіки:
+						Потрібен баланс (компроміс) між якістю та вагою (kb, mb..) графіки!
+						(якщо це можливо, рухаємося в сторону зменьшення ваги)</p>
+					<div class="practice-art-image">
+						<h3>Категорії зображень на макеті(векторні, растрові): </h3>
+						<div class="art-image-items">
+							<div class="art-image-item">
+								<div class="art-image-item-content">
+									<p>Іконки:</p>
+									невеликі прості зображення, які підсилюють ефект тексту,
+									або самостійно несуть певну інформацію. В основному це векторні зображення
+									(SVG).
+									Іконки можуть інтегруватись тегом IMG, SVG, CSS(background та інші)
+									</p>
+								</div>
+							</div>
+							<div class="art-image-item">
+								<div class="art-image-item-content">
+									<p>Контентні зображення:</p>
+									<p>зображення, які і є контентом сайту
+										В основному це растрові зображення (фотографії)
+										(JPG/PNG -> WEBP). Виводяться тегом IMG</p>
+								</div>
+							</div>
+							<div class="art-image-item">
+								<div class="art-image-item-content">
+									<p>Елементи дизайну: </p>
+									<p>веркторні, або растрові зображення (можливо з прозорістю)
+										які є частиною дизайну сайту.(SVG, JPG/PNG -> WEBP).
+										Елементи дизайну, частіше всього, інтегруються через CSS (background та інші)</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="formats-raster-image">
+							<h3>Формати растрових зображень: </h3>
+							<div class="formats-raster-image-items">
+								<div class="formats-raster-item">
+									<div class="item-raster-content">
+										<p>JPEG/JPG</p>
+										<p>Плюси: Низька вага (меньша ніж у...)</p>
+										<p>Мінуси: Не вміє бути анімованим і прозорим</p>
+										<p>Приклад: JPEG</p>
+										<img src="img/cat.jpeg" alt="">
+										<p>weight 70.5KB</p>
+									</div>
+								</div>
+								<div class="formats-raster-item">
+									<div class="item-raster-content">
+										<p>PNG</p>
+										<p>Плюси: Може бути прозорим (альфа-канал)</p>
+										<p>Мінуси: Велика (більша ніж у...) вага</p>
+										<p>Приклад: JPEG-PNG</p>
+										<img src="img/cat.png" alt="">
+										<p>weight 72.2KB</p>
+									</div>
+								</div>
+								<div class="formats-raster-item">
+									<div class="item-raster-content">
+										<p>WEBP</p>
+										<p>Плюси: Анімація, може бути прозорим (альфа-канал), низька вага (меньша ніж у...)</p>
+										<p>Мінуси: Немає</p>
+										<p>Приклад: JPEG-WEBP</p>
+										<img src="img/cat.webp" alt="">
+										<p>weight 7.71KB</p>
+									</div>
+								</div>
+								<div class="formats-raster-item">
+									<div class="item-raster-content">
+										<p>AVIF</p>
+										<p>Плюси: Анімація, може бути прозорим (альфа-канал), низька вага (меньша ніж у...)</p>
+										<p>Мінуси: Немає</p>
+										<p>Приклад: JPEG-AVIF</p>
+										<img src="img/cat.avif" alt="">
+										<p>weight 4.83KB</p>
+									</div>
+								</div>
+								<div class="formats-raster-item">
+									<div class="item-raster-content">
+										<p>GIF</p>
+										<p>Плюси: Анімація</p>
+										<p>Мінуси: Велика (більша ніж у...) вага</p>
+										<p>Приклад</p>
+										<img src="img/practice_tom.gif" alt="">
+										<p>weight 2.92MB</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="homework">
+						<div class="homework-container">
+							<h2>Домашнє завдання №8</h2>
+							<div class="homework-formats">
+								<div class="homework-formats-items">
+									<div class="homework-formats-item">
+										<div class="homework-formats-content">
+											<h3>Іконки</h3>
+											<h4>Іконки-контентні: </h4>
+											<p>raster (jpeg-webp) - іконки соц.мереж </p>
+											<img src="img/icon_content_(raster-vector)/icon_facebook_content_raster.webp" alt="">
+											<img src="img/icon_content_(raster-vector)/icon_insta_content_raster.webp" alt="">
+											<img src="img/icon_content_(raster-vector)/icon_twitter_content_raster.webp" alt="">
+											<p>raster (jpeg-webp) - лейбли фірм-партнерів</p>
+											<img src="/img/icon_content_(raster-vector)/icon_digital_content_raster.webp" alt="">
+											<img src="/img/icon_content_(raster-vector)/icon_fuzion_content_raster.webp" alt="">
+											<img src="/img/icon_content_(raster-vector)/icon_media_content_raster.webp" alt="">
+											<img src="/img/icon_content_(raster-vector)/icon_travel_content_raster.webp" alt="">
+											<img src="/img/icon_content_(raster-vector)/icon_vortex_content_raster.webp" alt="">
+
+											<h4>Іконки - елементи дизайну: </h4>
+											<p>vector (svg)</p>
+											<div class="icon-play">
+												<img src="img/icon_element_design(rastr-vector)/icon_arrow_vector_design.svg"
+													alt="">
+											</div>
+											<div class="icon-calendar icon">
+												<img src="img/icon_element_design(rastr-vector)/icon_calendar_vector_design.svg"
+													alt="">
+											</div>
+											<img src="img/icon_element_design(rastr-vector)/icon_gift_vector_design.svg" alt="">
+											<img src="img/icon_element_design(rastr-vector)/icon_personal_vector_design.svg"
+												alt="">
+											<div class="icon-project icon"><img
+													src="img/icon_element_design(rastr-vector)/icon_project_vector_design.svg"
+													alt=""></div>
+										</div>
+									</div>
+									<div class="homework-formats-item">
+										<div class="homework-formats-content">
+											<h3>Елементи дизайну: </h3>
+											<p>vector (svg)</p>
+											<img src="img/element_design(raster-vector_mit_opasity)/el_des_cloud_vector.svg"
+												alt="">
+											<img src="img/element_design(raster-vector_mit_opasity)/el_des_quotes_vector.svg"
+												alt="">
+										</div>
+									</div>
+									<div class="homework-formats-item">
+										<div class="homework-formats-content">
+											<h3>Контентні зображення: </h3>
+											<p>raster (jpeg-webp)</p>
+											<img class="designer-foto"
+												src="img/image_prewie(content-raster)/designer_content_rastr.webp" alt="">
+											<p>raster (jpeg-webp)</p>
+											<img src="img/image_prewie(content-raster)/prewie_content_rastr.webp" alt="">
+											<p>vector (svg)</p>
+											<img src="img/image_prewie(content-raster)/sun_vector_content.svg" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+		</main>
+
+		<footer>
+			FOOTER
+
+		</footer>
+	</div>
+</body>
+
+
+</html>
