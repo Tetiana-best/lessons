@@ -59,7 +59,7 @@ body {}
 }
 .header-list li:visited {
 	color: blueviolet;
-	text-decoration-style: underline;
+	text-decoration: underline;
 }
 .page {}
 
