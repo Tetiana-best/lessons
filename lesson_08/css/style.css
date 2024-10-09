@@ -43,24 +43,27 @@ body {}
 	font-size: 36px;
 	font-weight: 500;
 }
-.header-list li::before{
+.header-list li a::before{
 	content: "";
 	background: url("../img/bisnes_lupa_icon.png") left / 24px no-repeat;
 	min-height: 24px;
 	padding-inline-start: 36px;
+	transition: all 0.8s ease 0s;
 }
-.header-list li:hover{
+.header-list li a {
+	transition: all 0.8s ease 0s;
+}
+.header-list li a:hover{
 	color: white;
-	transition: all 0.8s ease 0s;
 }
-.header-list li:hover::before{
-	transition: all 0.8s ease 0s;
+.header-list li a:hover::before{
 	transform: scale(1.5);
 }
-.header-list li:visited {
+.header-list li a:visited{
 	color: blueviolet;
 	text-decoration: underline;
 }
+
 .page {}
 
 .page-container {
@@ -159,8 +162,10 @@ body {}
 	text-shadow: 2px 2px 1px #000;
 	margin-block-end: 15px;
 }
-.item-raster-content > img {
+.item-raster-content > img,
+.homework-formats-content>img {
 	margin-block-end: 10px;
+	max-width: 100%;
 }
 
 /* ---------HOMEWORK №8------- */
@@ -195,7 +200,8 @@ body {}
 }
 .homework-formats-content > img,
 .icon-play,
-.icon {
+.icon,
+.picture > img {
 	margin-right: 15px;
 	vertical-align: middle;
 }
