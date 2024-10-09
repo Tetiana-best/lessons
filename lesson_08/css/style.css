@@ -7,7 +7,7 @@
 /* ------------------------------------------------------------------ */
 body {}
 
-.wrapper{
+.wrapper {
 	min-height: 100%;
 	overflow: hidden; /* clip */
 	background: url("../img/backgraund/grey-brick_backgraund.webp") repeat fixed;
@@ -45,7 +45,7 @@ body {}
 }
 .header-list li a::before{
 	content: "";
-	background: url("../img/bisnes_lupa_icon.png") left / 24px no-repeat;
+	background: url("../img/bisnes_search_icon.png") left / 24px no-repeat;
 	min-height: 24px;
 	padding-inline-start: 36px;
 	transition: all 0.8s ease 0s;
