@@ -1,0 +1,80 @@
+
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700&display=swap");
+/* ------------------------------------------------------------------ */
+body {}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden; /* clip */
+	background: url("../img/backgraund/wood_backgraund.webp") repeat fixed;
+	font-family: "Epilogue", serif;
+}
+.header {
+	padding: 15px;
+	margin-block-end: 10px;
+}
+.header h1 {
+	font-family: "Caveat", serif;
+	font-size: 90px;
+	font-weight: 700;
+	color: #ff0000;
+	text-align: center;
+	background: url("../img/backgraund/wood_backgraund.webp") center / 100% no-repeat;
+	/* background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 0.8855917366946778) 31%, rgba(0, 255, 226, 1) 100%); */
+	border: 3px solid #000;
+	border-radius: 100px;
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	text-shadow: 5px 5px 3px #111111;
+	padding-block: 20px;
+	margin-block-end: 15px;
+}
+.header p{
+	font-size: 48px;
+	font-weight: 900;
+	margin-block-end: 15px;
+	color: #000;	
+}
+.header-list li{
+	font-size: 36px;
+	font-weight: 500;
+}
+.header-list li::before{
+	content: "";
+	background: url("../img/bisnes_lupa_icon.png") left / 24px no-repeat;
+	min-height: 24px;
+	padding-inline-start: 36px;
+}
+.header-list li:hover{
+	color: white;
+	transition: all 0.8s ease 0s;
+}
+.header-list li:hover::before{
+	transition: all 0.8s ease 0s;
+	transform: scale(1.5);
+}
+.header-list li:visited {
+	color: blueviolet;
+	text-decoration-style: underline;
+}
+.page {}
+
+.page-container {}
+
+.practice {}
+.practice h2{
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	color: #ff0000;
+	font-weight: 700;
+	margin-block-end: 15px;
+	text-shadow: 5px -5px 1px #111111;
+}
+
+
+
