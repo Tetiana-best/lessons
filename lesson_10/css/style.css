@@ -1,0 +1,198 @@
+
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700&display=swap");
+/* ------------------------------------------------------------------ */
+body {}
+
+.wrapper{
+	min-height: 100%;
+	overflow: clip;
+	background: url("../img/backgraund/wood_backgraund.webp") repeat fixed;
+}
+.header {
+	font-family: "Caveat", serif;
+	margin-block-end: 10px;
+}
+.header__container {
+	max-width: 100%;
+	margin-inline: auto;
+	padding: 15px;
+}
+.header__title {
+	font-size: 90px;
+	font-weight: 700;
+	color: #ff0000;
+	text-align: center;
+	background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 0.8855917366946778) 31%, rgba(0, 255, 226, 1) 100%);
+	border: 3px solid #000;
+	border-radius: 100px;
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	text-shadow: 5px 5px 3px #111111;
+	padding-block: 20px;
+	margin-block-end: 15px;
+}
+.header__list {
+	font-size: 36px;
+	font-weight: 500;
+}
+.header__item-list {
+	position: relative;
+	padding-inline-start: 36px;
+	min-height: 24px;
+	vertical-align: middle;
+}
+.header__item-list:not(:last-child) {
+	margin-block-end: 15px;
+}
+
+.header__item-list::before{
+	content: "";
+	background: url("../img/bisnes_rocket_icon.jpg") 0 0 /24px no-repeat;
+	block-size: 24px;
+	inline-size: 24px;
+
+	position: absolute;
+	inset-inline-start: 0;
+	inset-block-start: 20%;
+	/* transform: translateY(-50%); */
+	
+}
+.header__item-list a:hover{
+	color: white;
+	transition: all 0.8s ease 0s;
+}
+.header__item-list:hover::before{
+	transition: all 0.8s ease 0s;
+	transform: scale(1.5);
+	pointer-events: all;
+}
+/* .header__item-list a:visited {
+	color: blueviolet;
+	text-decoration-style: underline;
+} */
+
+[class*="__container"]{
+	max-width: 100%;
+	margin-inline: auto;
+	padding: 15px;
+}
+.main {}
+.main__container {}
+.main__practice {}
+
+.practice {}
+
+.practice__title {
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	color: #ff0000;
+	text-shadow: 5px -5px 1px #111111;
+	margin-block-end: 15px;
+}
+
+.practice__absolut {}
+.absolut {}
+.absolut__container {}
+
+.absolut__subtitle {}
+
+.subtitle {
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	color: blue;
+	text-decoration: underline;
+	text-shadow: 2px -2px 1px #111111;
+	margin-block-end: 30px;
+}
+.absolut__picture {
+	font-family: "Epilogue", serif;
+	background-color: #FDF0E9;
+}
+.picture {}
+.picture__container {
+	position: relative;
+	max-width: 566px;
+	min-height: 585px;
+	background-color: #FDF0E9;
+}
+.picture__content{}
+.picture__content > img {
+	max-width: 100%;
+}
+.picture__man-glasses {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 38.6926%; /* 219/566 */
+	height: 37.4359%; /* 219/585 */
+	min-height: 37.4359%; /* 219/585 */
+	border-radius: 50%;
+	background-color: #EF6D58;
+	position: absolute;
+	z-index: 50;
+}
+.picture__man-glasses img {
+	position: absolute;
+	bottom: 0;
+	left: 51%;
+	margin: 0px 0px 0px -80px;
+
+	/* left: 0;
+	right: 0;
+	margin: auto; */
+}
+.picture__office {
+	position: absolute;
+	right: 0;
+	top: 26.4957%; /* 155/585 */
+	z-index: 5;
+}
+.picture__office img {}
+
+.picture__img-content {
+	position: absolute;
+	left: 51.9435%; /* 294/566 */
+	top: 9.0598%; /* 53/585 */
+	z-index: 4;
+}
+.picture__img-content img {}
+
+.picture__cloud-design {
+	position: absolute;
+	background: url("../img/cloud.svg") 0 0 / 192.978px no-repeat;
+	width: 192.978px;
+	height: 166.066px;
+	min-height: 166.066px;
+	left: 2.8269%; /* 16/566 */
+	top: 12.9915%; /* 76/585 */
+	z-index: 3;
+}
+.picture__arrow-design {
+	background: url("../img/arrow.svg") 0 0 / 193.32px no-repeat;
+	width: 193.32px;
+	height: 89px;
+	min-height: 89px;
+	position: absolute;
+	right: 2.2968%; /* 13/566 */
+	top: 0;
+	z-index: 2;
+}
+.picture__background {
+	width: 384px;
+	height: 319px;
+	background-color: #F5DED1;
+	position: absolute;
+	left: 12.0141%; /* 68/566 */
+	top: 2.5641%; /* 15/585 */
+	z-index: 1;
+}
+
+
+
+
