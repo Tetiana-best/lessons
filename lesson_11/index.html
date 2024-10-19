@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_11_Трансформації</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header lang="uk" class="header">
+			<div class="header__container">
+				<h1 class="header__title">Урок 11 "Трансформація, властивість transform"</h1>
+				<ul class="header__list">
+					<li class="header__item-list"><a href="#practice-subtitle" title="Перейти до розділу 1">Практика</a></li>
+					<li class="header__item-list"><a href="#homework-subtitle" title="Перейти до розділу 2">Домашнє
+							завдання</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<!-- Приктика -->
+				<div class="main__practice practice" id="practice-subtitle">
+					<div class="practice__container">
+						<h2 class="practice__title">Практика</h2>
+						<span>важливо:</span>
+						<p>НЕ ПРАЦЮЄ з рядковими об'єктами!</p>
+						<p>Задається трансформація властивістю transform та її значеннями.
+							При вказані відсоткових значень відсотки беруться від розміру об’єкта x - від ширини y - від висоти
+						</p>
+						<div class="practice__two-d-transform two-d-transform">
+							<div class="two-d-transform__container">s
+								<h3 class="two-d-transform__title">2D Трансформації</h3>
+								<div class="two-d-transform__cards cards">
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-translate-xy">
+												<div class="content-card__text">
+													<p>у</p>
+													<h4 class="content-card__subtitle">translate X,Y = translate(10%,10%)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-translate-x">
+												<div class="content-card__text">
+													<p>к</p>
+													<h4 class="content-card__subtitle">translate X = translate(10%,0%)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-scale-xyless">
+												<div class="content-card__text">
+													<p>р</p>
+													<h4 class="content-card__subtitle">scale XY = scale(50%,50%)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-scale-xymore">
+												<div class="content-card__text">
+													<p>а</p>
+													<h4 class="content-card__subtitle">scale XY = scale(130%,130%)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-scale-n">
+												<div class="content-card__text">
+													<p>ї</p>
+													<h4 class="content-card__subtitle">scale N = scale(70%)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-rotate">
+												<div class="content-card__text">
+													<p>н</p>
+													<h4 class="content-card__subtitle">rotate (deg) = rotate(30deg)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-rotate-x">
+												<div class="content-card__text">
+													<p>а</p>
+													<h4 class="content-card__subtitle">rotate X (deg) = rotateX(120deg)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-rotate-y">
+												<div class="content-card__text">
+													<p>в</p>
+													<h4 class="content-card__subtitle">rotate Y (deg) = rotateY(180deg)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-origin">
+												<div class="content-card__text">
+													<p>і</p>
+													<h4 class="content-card__subtitle">transform-origin: 0 0;
+														transform: rotate(360deg);</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-skew">
+												<div class="content-card__text">
+													<p>л</p>
+													<h4 class="content-card__subtitle">skew (xdeg, ydeg); = skew(-10deg, 0deg)</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-matrix">
+												<div class="content-card__text">
+													<p>ь</p>
+													<h4 class="content-card__subtitle">transform:(translate, scale, rotate, skew);
+													</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-new-translate">
+												<div class="content-card__text">
+													<p>н</p>
+													<h4 class="content-card__subtitle">new translate = translate: 0% 10%</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-new-scale">
+												<div class="content-card__text">
+													<p>а</p>
+													<h4 class="content-card__subtitle">new scale = scale: 2 1;</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cards__card card">
+										<div class="card__content-card content-card">
+											<div class="content-card__subcard-new-rotate">
+												<div class="content-card__text">
+													<p>!</p>
+													<h4 class="content-card__subtitle">new rotate = rotate:70deg</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+
+
+
+								</div>
+
+							</div>
+							<span>важливо:</span>
+						</div>
+
+
+
+
+
+
+					</div>
+				</div>
+				<!-- Домашнє завдання -->
+				<div class="main__homework homework" id="homework-subtitle">
+					<div class="homework__container">
+						<h2 class="homework__title">Домашнє завдання</h2>
+						<div class="homework__autos autos">
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer" lang="uk">
+			<div class="footer__container">
+				<h2 class="footer__title">Всі права захищені!</h2>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

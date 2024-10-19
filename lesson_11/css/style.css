@@ -1,0 +1,304 @@
+
+@import url("reset.css");
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700&display=swap");
+/* ------------------------------------------------------------------ */
+body {}
+
+.wrapper{
+	min-height: 100%;
+	overflow: clip;
+	background: url("../img/backgraund/grey-brick_backgraund.webp") repeat fixed;
+}
+.header {
+	font-family: "Caveat", serif;
+	margin-block-end: 10px;
+}
+.header__container {
+	max-width: 100%;
+	margin-inline: auto;
+	padding: 15px;
+}
+.header__title {
+	font-size: 90px;
+	font-weight: 700;
+	color: #ff0000;
+	text-align: center;
+	background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 0.8855917366946778) 31%, rgba(0, 255, 226, 1) 100%);
+	border: 3px solid #000;
+	border-radius: 100px;
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	text-shadow: 5px 5px 3px #111111;
+	padding-block: 20px;
+	margin-block-end: 15px;
+}
+.header__list {
+	font-size: 36px;
+	font-weight: 500;
+}
+.header__item-list {
+	position: relative;
+	padding-inline-start: 36px;
+	min-height: 24px;
+	vertical-align: middle;
+}
+.header__item-list:not(:last-child) {
+	margin-block-end: 15px;
+}
+
+.header__item-list::before{
+	content: "";
+	background: url("../img/bisnes_search_icon.png") 0 0 /24px no-repeat;
+	block-size: 24px;
+	inline-size: 24px;
+
+	position: absolute;
+	inset-inline-start: 0;
+	inset-block-start: 20%;
+	/* transform: translateY(-50%); */
+	
+}
+.header__item-list a:hover{
+	color: white;
+	transition: all 0.8s ease 0s;
+}
+.header__item-list:hover::before{
+	transition: all 0.8s ease 0s;
+	transform: scale(1.5);
+	pointer-events: all;
+}
+/* .header__item-list a:visited {
+	color: blueviolet;
+	text-decoration-style: underline;
+} */
+
+[class*="__container"]{
+	max-width: 100%;
+	margin-inline: auto;
+	padding: 15px;
+}
+.main {}
+.main__container {}
+.main__practice {}
+.practice {
+	font-family: "Manrope", serif;
+}
+.practice__container {
+	
+}
+.practice__container p{
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+span {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: red;
+	text-shadow: 2px -2px 2px #111111;
+}
+.practice__title {
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+	color: #ff0000;
+	text-shadow: 5px -5px 1px #111111;
+	margin-block-end: 15px;
+}
+.practice__two-d-transform {}
+
+.two-d-transform {}
+.two-d-transform__container{
+	max-width: 1440px;
+}
+.two-d-transform__title {
+	font-size: 40px;
+	font-weight: 500;
+	text-align: center;
+	color: blue;
+	text-decoration: underline;
+	text-shadow: 2px -2px 1px #111111;
+	margin-block-end: 15px;
+}
+.two-d-transform__cards {}
+
+.cards {
+	font-size: 0;
+	margin-inline: -15px;
+
+}
+.cards__card {}
+
+.card {
+	display: inline-block;
+	max-width: 14.2857142857%;
+	padding-inline: 15px;
+}
+.card__content-card {
+	margin-block-end: 5px;
+
+}
+.content-card {
+	font-size: 16px;
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+
+.content-card__subcard-translate-xy,
+.content-card__subcard-translate-x,
+.content-card__subcard-scale-xyless,
+.content-card__subcard-scale-xymore,
+.content-card__subcard-scale-n,
+.content-card__subcard-rotate,
+.content-card__subcard-rotate-x,
+.content-card__subcard-rotate-y,
+.content-card__subcard-origin,
+.content-card__subcard-skew,
+.content-card__subcard-matrix,
+.content-card__subcard-new-translate,
+.content-card__subcard-new-scale,
+.content-card__subcard-new-rotate {
+	max-width: 200px;
+	height: 200px;
+	background-color: yellow;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+.content-card__subcard-translate-xy:hover {
+	transform: translate(10%, 10%);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-translate-x:hover {
+	transform: translate(0, 10%);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-scale-xyless:hover {
+	transform: scale(50%, 50%);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-scale-xymore:hover {
+	transform: scale(130%, 130%);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-scale-n:hover {
+	transform: scale(70%);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-rotate:hover {
+	transform: rotate(30deg);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-rotate-x:hover {
+	transform: rotateX(120deg);
+	transition: all 2s ease 0s;
+}
+.content-card__subcard-rotate-y:hover {
+	transform: rotateY(180deg);
+	transition: all 2s ease 0s;
+}
+.content-card__subcard-origin:hover {
+	transform-origin: 0 0;
+	transform: rotate(360deg);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-skew:hover {
+	transform: skew(-20deg, 0deg);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-matrix:hover {
+	transform: translate(20%, 20%) scale(0.5) rotate(30deg) skew(20deg, 20deg);
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-new-translate:hover {
+	translate: 10% 0%;
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-new-scale:hover {
+	scale: 2 1;
+	transition: all 0.8s ease 0s;
+}
+.content-card__subcard-new-rotate:hover {
+	rotate: 70deg;
+	transition: all 0.8s ease 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-card__text {
+	text-align: center;
+}
+.content-card__text p{
+	font-size: 100px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-shadow: 4px -4px 2px #111111;
+	padding-block: 30px;
+}
+.content-card__subtitle {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main__homework {}
+
+.homework {}
+
+.homework__container {}
+
+.homework__title {}
+
+.homework__autos {}
+
+.autos {}
+
+
+
+
+
+
+/* ----------FOOTER------------ */
+
+.footer__container {
+	background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 0.8855917366946778) 31%, rgba(0, 255, 226, 1) 100%);
+	border: 5px solid #000;
+	border-radius: 40%;
+
+}
+.footer__title {
+	text-align: center;
+	font-size: 36px;
+	color: #ff0000;
+	text-shadow: 5px 5px 3px #111111;
+	padding-block: 20px;
+}
