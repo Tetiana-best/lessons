@@ -560,3 +560,17 @@ body {}
 	text-shadow: 1px -1px 1px #000;
 	transition: all 0.3s ease 0s;
 }
+
+.footer__container {
+	background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 0.8855917366946778) 31%, rgba(0, 255, 226, 1) 100%);
+	border: 5px solid #000;
+	border-radius: 40%;
+
+}
+.footer__title {
+	text-align: center;
+	font-size: 36px;
+	color: #ff0000;
+	text-shadow: 5px 5px 3px #111111;
+	padding-block: 20px;
+}
