@@ -351,6 +351,9 @@ body {}
 	left: 3.6842%; /* 21/570 */
 	top: 3.9867%; /* 24/602 */
 }
+.image__laptop img{
+	max-width: 255px;
+}
 .image__laptop::before {
 	content: "";
 	width: 246px;
@@ -385,6 +388,7 @@ body {}
 	z-index: 4;
 }
 .image__stars-cloud img {
+	max-width: 42px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -410,6 +414,9 @@ body {}
 	right: 0;
 	top: 37.2093%; /* 224/602 */
 	z-index: 3;
+}
+.image__girl img{
+	max-width: 246px;
 }
 .image__girl::before {
 	content: "";
@@ -486,7 +493,7 @@ body {}
 }
 .portfolio-latest-work__row {
 	font-size: 0;
-	margin-inline: -16px;
+	/* margin-inline: -16px; */
 	text-align: center;
 	/* border: 1px solid #fff; */
 	}
