@@ -27,13 +27,16 @@
 				<div class="main__practice practice" id="practice-subtitle">
 					<div class="practice__container">
 						<h2 class="practice__title">Практика</h2>
-						<span>важливо:</span>
-						<p>НЕ ПРАЦЮЄ з рядковими об'єктами!</p>
-						<p>Задається трансформація властивістю transform та її значеннями.
-							При вказані відсоткових значень відсотки беруться від розміру об’єкта x - від ширини y - від висоти
-						</p>
+						<h3 class="practice__subtitle">важливо:</h3>
+						<div class="practice__text text">
+							<p>НЕ ПРАЦЮЄ з рядковими об'єктами!</p>
+							<p>Задається трансформація властивістю transform та її значеннями.
+								При вказані відсоткових значень відсотки беруться від розміру об’єкта x - від ширини y - від
+								висоти
+							</p>
+						</div>
 						<div class="practice__two-d-transform two-d-transform">
-							<div class="two-d-transform__container">s
+							<div class="two-d-transform__container">
 								<h3 class="two-d-transform__title">2D Трансформації</h3>
 								<div class="two-d-transform__cards cards">
 									<div class="cards__card card">
@@ -178,18 +181,132 @@
 											</div>
 										</div>
 									</div>
-
-
-
-
-
-
 								</div>
-
 							</div>
-							<span>важливо:</span>
+							<div class="two-d-transform__important">
+								<h3 class="two-d-transform__subtitle">важливо:</h3>
+								<div class="two-d-transform__text text">
+									<p><span>Нові окремі властивості:</span> translate, scale, rotate <span>не підтримуються
+											валідатором CSS</span> (у валідаторі видає помилку на цю властивість). </p>
+									<p>При використанні <span>transform</span> об’єкт стає ближче до користувача по осі z, тобто
+										накриває собою інші об’єкти яким не задано властивостей transform та position, але
+										керувати цими об’єктами за допомогою <span>z-index ми не можемо</span>, тому що z-index
+										працює лише з елементами позиція яких відмінна від static.
+									</p>
+									<p>При застосуванні <span>scale зі значенням більше за 1 для картинок, буде псуватись</span>
+										якість картинки тому щоб уникнути цього варто <span>експортувати картинку трішки більшого
+											розміру та вказувати</span> для неї макетні розміри за допомогою властивості
+										<span>max-width</span>
+									</p>
+								</div>
+							</div>
 						</div>
 
+						<div class="practice__three-d-transform three-d-transform">
+							<div class="three-d-transform__container">
+								<h3 class="three-d-transform__title">3D Трансформації</h3>
+								<!-- perspective-block -->
+								<h3 class="three-d-transform__subtitle">perspective</h3>
+								<div class="three-d-transform__text text">
+									<p>Задається батьківському елементу!</p>
+									<p>perspective- (перспектива) встановлює глибину та змінює точки початку координат потрібна
+										для 3D трансформацій</p>
+									<p>perspective-origin - визначає позицію, з якої дивиться глядач</p>
+								</div>
+								<div class="three-d-transform__perspective-block">
+									<div class="three-d-transform__perspective-item">Perspective</div>
+								</div>
+
+								<!-- cards-three 3d -->
+
+								<div class="three-d-transform__cards-three">
+									<div class="cards-three__container">
+										<div class="cards-three__card-three card-three">
+											<div class="card-three__content-card-three content-card-three">
+												<div class="content-card-three__subcard-translate-xyz">
+													<div class="content-card-three__text">
+														<p>!</p>
+														<h4 class="content-card-three__subtitle">translate3d(X,Y,Z) =
+															translate3d(20px, 20px,20px);
+														</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cards-three__card-three card-three">
+											<div class="card-three__content-card-three content-card-three">
+												<div class="content-card-three__subcard-scale-xyz">
+													<div class="content-card-three__text">
+														<p>3</p>
+														<h4 class="content-card-three__subtitle">scale3d(X,Y,Z) = scale(1.2, 1.5,
+															1.4);
+														</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cards-three__card-three card-three">
+											<div class="card-three__content-card-three content-card-three">
+												<div class="content-card-three__subcard-rotate-xyzdeg">
+													<div class="content-card-three__text">
+														<p>D</p>
+														<h4 class="content-card-three__subtitle">rotated(1.2,
+															1.5, 1.4)+для батька:transform-style: preserve-3d;
+														</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="cards-three__card-three card-three">
+											<div class="card-three__content-card-three content-card-three">
+												<div class="content-card-three__subcard-matrix-xyz">
+													<div class="content-card-three__text">
+														<p>!</p>
+														<h4 class="content-card-three__subtitle">matrix X,Y,Z = transform:(translate
+															scale rotate skew);
+														</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- rotate 360 FLIPPER  -->
+								<div class="three-d-transform__flipper">
+									<div class="flipper">
+										<div class="flipper__container">
+											<div class="flipper__card ">
+												<div class="flipper__body">
+													<div class="flipper__back">
+														<img src="img/euro_back.webp" alt="">
+													</div>
+													<div class="flipper__front">
+														<img src="img/euro_front.webp" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+
+							.
+
+
+
+
+							<div class="three-d-transform__important">
+								<h3 class="three-d-transform__subtitle">важливо:</h3>
+								<div class="three-d-transform__text text">
+									<p>Крім осі X та Y додається вісь Z. Вісь Z працює лише з perspective</p>
+									<p>translate3d анімується більш плавно ніж звичайний translate.</p>
+								</div>
+							</div>
+						</div>
+
+						.
 
 
 
