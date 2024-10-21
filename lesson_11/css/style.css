@@ -394,8 +394,7 @@ span{
 	position: relative;
 	perspective: 800px;
 }
-.flipper__back,
-.flipper__front {
+.flipper__back {
 	transition: all 0.3s;
 }
 .flipper__back {
