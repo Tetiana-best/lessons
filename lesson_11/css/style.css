@@ -312,9 +312,12 @@ span{
 	padding: 15px;
 }
 /* ----------cards-three d--------------- */
-.three-d-transform__cards-three {}
+.three-d-transform__cards-three {
+	margin-block-end: 30px;
+}
 .cards-three__container{
 	max-width: 1140px;
+	text-align: center;
 }
 .cards-three {
 	font-size: 0;
@@ -394,28 +397,624 @@ span{
 	position: relative;
 	perspective: 800px;
 }
-.flipper__back {
+.flipper__back,
+.flipper__front {
 	transition: all 0.3s;
 }
 .flipper__back {
-	will-change: transform;
+	/* will-change: transform; */
 	backface-visibility: hidden;
-	transform: rotateY(180deg);
+	transform: rotateX(180deg);
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 .flipper__front {
-	will-change: transform;
-	transform: rotateY(0deg);
+	/* will-change: transform; */
+	transform: rotateX(0deg);
+	backface-visibility: hidden;
 }
 .flipper__body:hover .flipper__back {
-	transform: rotateY(0deg);
-	visibility: visible;
+	transform: rotateX(0deg);
 }
 .flipper__body:hover .flipper__front {
-	transform: rotateY(-180deg);
-	visibility: hidden;
+	transform: rotateX(-180deg);
+}
+/* -------------homework------------------ */
+
+.main__homework {}
+.homework {}
+.homework__container {}
+.homework__title {}
+
+.homework__picture {}
+
+.picture {
+	font-family: "Manrope", serif;
+}
+
+.picture__container {
+	max-width: 1920px;
+	min-height: 1200px;
+	background: blue;
+
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.picture__background {
+
+}
+.background {}
+
+.background__sky {}
+
+.background__sun {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: radial-gradient(circle, #ffea00, #ff9100);
+	box-shadow: 0 0 50px rgba(255, 234, 0, 0.9);
+	position: absolute;
+	top: 10%;
+	right: 7.8125%; /* 150/1920 */
+}
+.background__sun-on:hover .background__sun {
+	box-shadow: 0px 0px 100px 40px rgba(255, 234, 0, 0.9);
+	transition: box-shadow 0.5s ease;
+}
+/* -----------CLOUD-LEFT-------------- */
+.background__cloud-left {
+	width: 150px;
+	height: 130px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	position: relative;
+}
+.background__cloud-left::before {
+	content: "";
+	width: 150px;
+	height: 80px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 50px;
+	left: 90px;
+	z-index: 5;
+
+}
+.background__cloud-left::after {
+	content: "";
+	width: 150px;
+	height: 80px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 50px;
+	right: 90px;
+}
+.cloud-left__inner {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.cloud-left__inner::after {
+	content: "";
+	width: 150px;
+	height: 50px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 80px;
+	left: 160px;
+}
+
+.cloud-left__inner::before {
+	content: "";
+	width: 150px;
+	height: 50px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 80px;
+	right: 160px;
+}
+/* -----------CLOUD-RIGHT-------------- */
+
+.background__cloud-right {
+	width: 150px;
+	height: 130px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	bottom: 30px;
+	left: 1000px;
+	position: relative;
+}
+
+.background__cloud-right::before {
+	content: "";
+	width: 150px;
+	height: 80px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 50px;
+	left: 90px;
+	z-index: 5;
+
+}
+
+.background__cloud-right::after {
+	content: "";
+	width: 150px;
+	height: 80px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 50px;
+	right: 90px;
+}
+
+.cloud-right__inner {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.cloud-right__inner::after {
+	content: "";
+	width: 150px;
+	height: 50px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 80px;
+	left: 160px;
+}
+
+.cloud-right__inner::before {
+	content: "";
+	width: 150px;
+	height: 50px;
+	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
+	background-color: #fff;
+
+	position: absolute;
+	top: 80px;
+	right: 160px;
+}
+/* ------------ROAD------------- */
+
+.picture__road {
+	width: 1920px;
+	height: 400px;
+	background-color: grey;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.picture__road:before {
+	content: "";
+	width: 1920px;
+	border: 10px dashed #fff;
+
+	position: absolute;
+	bottom: 190px;
+	left: 0;
+}
+
+/* ------------HOUSE----------- */
+.picture__house {}
+
+.house {
+
+}
+
+.house__building {
+	height: 550px;
+	width: 500px;
+	background-color: violet;
+	box-shadow: 0px 0px 50px 10px darkmagenta;
+
+	position: absolute;
+	top: 250px;
+	left: 100px;
+
+	perspective: 300px;
+	perspective-origin: center;
+	/* transform-style: preserve-3d; */
+}
+
+.house__roof {
+	height: 150px;
+	width: 550px;
+	background-color: darkmagenta;
+
+	position: absolute;
+	left: 0px;
+	top: -75px;
+	/* transform: rotateX(50deg); */
+	transform: rotate3d(10, 2, 1, 20deg);
+	box-shadow: 10px 10px 5px black;
+
+	z-index: 60;
+}
+
+.house__window {
+	width: 90px;
+	height: 100px;
+	border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+	background-color: #6269e8;
+	border: 4px solid brown;
+	box-shadow: 5px 5px 3px black;
+	
+	position: absolute;
+	top: 320px;
+	left: 150px;
+}
+.house__window--top-center {
+	left: 315px;
+}
+.house__window--top-right {
+	left: 480px;
+}
+.house__window--middle-left {
+	top: 480px;
+	left: 150px;
+}
+
+.house__window--middle-center {
+	top: 480px;
+	left: 315px;
+}
+
+.house__window--middle-right {
+	top: 480px;
+	left: 480px;
+}
+
+.house__window--bottom-left {
+	top: 645px;
+	left: 150px;
+}
+
+.house__window--bottom-center {
+	top: 645px;
+	left: 315px;
+}
+
+.house__window--bottom-right {
+	top: 645px;
+	left: 480px;
+}
+
+/* -----------TAXI------------ */
+
+.picture__taxi>div{
+	/* background: yellow;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+}
+.picture__taxi {}
+
+.taxi {}
+
+.taxi__label{
+	width: 130px;
+	height: 40px;
+	background-color: #fff;
+	font-size: 36px;
+	font-weight: 900;
+	text-align: center;
+	text-transform: uppercase;
+	border: 4px solid #000;
+
+	position: absolute;
+	bottom: 572px;
+	right: 390px;
+}
+.taxi__label:hover{
+	background-color: orange;
+}
+
+.taxi__body-front-top {
+	width: 200px;
+	border-bottom: 100px solid yellow;
+	border-left: 45px solid transparent;
+	
+	position: absolute;
+	bottom: 465px;
+	right: 450px;
+}
+
+.taxi__body-front-top::before {
+	content: "";
+	width: 310px;
+	height: 20px;
+	border-radius: 155px 140px 0px 0px / 75px 75px 75px 75px;
+	background-color: yellow;
+	
+	position: absolute;
+	top: -8px;
+	left: 0px;
+}
+
+
+.taxi__body-front-bottom {
+	width: 180px;
+	height: 140px;
+	background: yellow;
+	/* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+	border: 4px solid #000;
+	border-right: 0;
+	border-top: 0;
+	border-left: 0;
+
+	position: absolute;
+	bottom: 325px;
+	right: 470px;
+}
+
+.taxi__body-back-top {
+	width: 200px;
+	border-bottom: 100px solid yellow;
+	border-right: 45px solid transparent;
+
+	position: absolute;
+	bottom: 465px;
+	right: 250px;
+}
+
+.taxi__body-back-bottom {
+	width: 220px;
+	height: 140px;
+	background: yellow;
+	/* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+	border: 4px solid #000;
+	border-right: 0;
+	border-top: 0;
+
+	position: absolute;
+	bottom: 325px;
+	right: 250px;
+}
+
+.taxi__body-hood {
+	width: 160px;
+	height: 140px;
+	border-radius: 90% 35% 0% 100% / 100% 0% 100% 0%;
+	background: yellow;
+	/* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+	border: 4px solid #000;
+
+	position: absolute;
+	bottom: 325px;
+	right: 650px;
+}
+.taxi__body-trunk {
+	width: 130px;
+	height: 140px;
+	border-radius: 0% 100% 0% 100% / 100% 55% 45% 0%;
+	background: yellow;
+	/* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+	border: 4px solid #000;
+
+	position: absolute;
+	bottom: 325px;
+	right: 120px;
+}
+.taxi__window-back-big{
+	width: 120px;
+	height: 100px;
+	background-color: lightblue;
+
+	position: absolute;
+	bottom: 465px;
+	right: 340px;
+	border: 4px solid #000;
+
+}
+
+.taxi__window-back-triangle{
+	width: 70px;
+	height: 100px;
+	background-color: lightblue;
+	border-radius: 0% 100% 100% 0% / 0% 100% 0% 100%;
+
+	position: absolute;
+	bottom: 465px;
+	right: 270px;
+	border: 4px solid #000;
+	border-left: 0;
+}
+.taxi__window-front-big {
+	width: 105px;
+	height: 100px;
+	background-color: lightblue;
+	border: 4px solid #000;
+	border-left: 0;
+
+	position: absolute;
+	bottom: 465px;
+	right: 480px;
+}
+.taxi__window-front-triangle {
+	border-left: 45px solid transparent;
+	border-bottom: 100px solid lightblue;
+	
+	position: absolute;
+	bottom: 465px;
+	right: 585px;
+}
+
+.taxi__window-front-borderleft {
+	width: 108px;
+	height: 3px;
+	background-color: #000;
+	transform: rotate(114deg);
+	border-radius: 3px;
+
+	position: absolute;
+	bottom: 513px;
+	right: 552px;
+}
+.taxi__window-front-borderleft--bottom {
+	width: 44px;
+	height: 4px;
+	transform: rotate(0deg);
+
+	bottom: 465px;
+	right: 584px;
+}
+
+.taxi__window-front-borderleft--between{
+	width: 115px;
+	height: 3.8px;
+	transform: rotate(90deg);
+
+	bottom: 513px;
+	right: 410.4px;
+}
+
+.taxi__decor {
+	width: 640px;
+	height: 15px;
+	background: repeating-linear-gradient(90deg,
+				black 0px,
+				black 15px,
+				#fff 15px,
+				#fff 30px);
+	border-radius: 18px 18px 0px 0px;
+	overflow: hidden;
+
+	position: absolute;
+	bottom: 420px;
+	right: 140px;
+}
+.taxi__decor--bottom {
+	width: 660px;
+	border-radius: 18px 0px 0px 0px;
+
+	bottom: 405px;
+	right: 135px;
+
+}
+
+.taxi__part-decor {
+	width: 7px;
+	height: 15px;
+	background-color: #000;
+	border-radius: 0px 18px 0px 0px;
+
+	position: absolute;
+	bottom: 405px;
+	right: 128px;
+
+
+}
+.taxi__bumper {
+	width: 735px;
+	height: 30px;
+	border-radius: 13px;
+	background-color: rgba(209, 207, 207, 0.951);
+	border: 4px solid #000;
+
+	position: absolute;
+	bottom: 300px;
+	right: 100px;
+}
+.taxi__wheel-front {
+	width: 150px;
+	height: 150px;
+	background: rgb(128, 128, 128);
+	background: radial-gradient(circle, rgba(128, 128, 128, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 100%);
+	border-radius: 50%;
+	border: 40px solid #000;
+	
+
+	position: absolute;
+	bottom: 235px;
+	right: 610px;
+}
+
+.taxi__wheel-front-move:hover .taxi__wheel-front {
+	transform: rotate(360deg);
+	transition: all 0.8s ease 0s;
+}
+.taxi__wheel-back-move:hover .taxi__wheel-front--back {
+	transform: rotate(360deg);
+	transition: all 0.8s ease 0s;
+}
+.taxi__wheel-front--back{
+	right: 160px;
+}
+.taxi__headlight {
+	width: 25px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 4px solid #000;
+	box-shadow: -25px 5px 25px 15px white;
+
+
+	position: absolute;
+	bottom: 330px;
+	right: 791px;
+}
+.taxi__headlight-on:hover .taxi__headlight{
+	box-shadow: -120px 20px 50px 80px white;
+	transition: box-shadow 0.5s ease;
+}
+
+.taxi__headlight--backlight{
+	width: 18px;
+	height: 30px;
+	background-color: red;
+	box-shadow: 10px 1px 35px 10px red;
+
+	bottom: 330px;
+	right: 115px;
+}
+.headlight--backlight-on:hover .taxi__headlight--backlight {
+	box-shadow: 20px 5px 40px 30px red;
+	transition: box-shadow 0.5s ease;
+}
+.taxi__front-door-handel {
+	width: 50px;
+	height: 17px;
+	border-radius: 10px;
+	background-color: gray;
+	border: 4px solid #000;
+
+	position: absolute;
+	bottom: 442px;
+	right: 500px;
+}
+
+.taxi__front-door-handel--back {
+	width: 50px;
+	height: 17px;
+	border-radius: 10px;
+	background-color: gray;
+	border: 4px solid #000;
+
+	position: absolute;
+	bottom: 442px;
+	right: 290px;
 }
 
 
@@ -424,17 +1023,12 @@ span{
 
 
 
-.main__homework {}
 
-.homework {}
 
-.homework__container {}
 
-.homework__title {}
 
-.homework__autos {}
 
-.autos {}
+
 
 
 
@@ -456,3 +1050,31 @@ span{
 	text-shadow: 5px 5px 3px #111111;
 	padding-block: 20px;
 }
+
+/* 
+.taxi__body-top {
+	width: 400px;
+	height: 140px;
+	border-radius: 82px 38px 49px 0px / 119px 118px 1px 2px;
+	background: yellow;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+	border: 4px solid #000;
+
+
+	position: absolute;
+	bottom: 450px;
+	right: 360px;
+}
+
+.taxi__body-bottom {
+	width: 700px;
+	height: 180px;
+	border-radius: 400px 460px 75px 75px / 110px 130px 0px 0px;
+	background: yellow;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+	border: 4px solid #000;
+
+	position: absolute;
+	bottom: 300px;
+	right: 200px;
+} */
