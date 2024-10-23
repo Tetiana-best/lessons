@@ -314,7 +314,7 @@ span{
 .three-d-transform__cards-three {
 	margin-block-end: 30px;
 }
-.three-d-transform__container{
+.cards-three__container{
 	max-width: 1140px;
 	text-align: center;
 }
