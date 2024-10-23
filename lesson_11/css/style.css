@@ -211,13 +211,13 @@ span{
 	transform: translate(0, 10%);
 }
 .card__content-card:hover .content-card__subcard-scale-xyless {
-	transform: scale(50%, 50%);
+	transform: scale(20px, 20px);
 }
 .card__content-card:hover .content-card__subcard-scale-xymore {
-	transform: scale(130%, 130%);
+	transform: scale(260px, 260px);
 }
 .card__content-card:hover .content-card__subcard-scale-n {
-	transform: scale(70%);
+	transform: scale(140px);
 }
 .card__content-card:hover .content-card__subcard-rotate {
 	transform: rotate(30deg);
