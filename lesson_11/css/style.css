@@ -274,7 +274,6 @@ span{
 
 .three-d-transform {}
 
-.three-d-transform__container {}
 
 .three-d-transform__title {}
 
@@ -315,7 +314,7 @@ span{
 .three-d-transform__cards-three {
 	margin-block-end: 30px;
 }
-.cards-three__container{
+.three-d-transform__container{
 	max-width: 1140px;
 	text-align: center;
 }
@@ -989,7 +988,7 @@ span{
 	bottom: 330px;
 	right: 115px;
 }
-.headlight--backlight-on:hover .taxi__headlight--backlight {
+.taxi__backlight-on:hover .taxi__headlight--backlight {
 	box-shadow: 20px 5px 40px 30px red;
 	transition: box-shadow 0.5s ease;
 }
