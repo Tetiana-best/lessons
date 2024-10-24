@@ -463,141 +463,49 @@ span{
 	transition: box-shadow 0.5s ease;
 }
 /* -----------CLOUD-LEFT-------------- */
-.background__cloud-left {
+.cloud-left{}
+.cloud-left__center {
 	width: 150px;
 	height: 130px;
 	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
 	background-color: #fff;
 
 	position: absolute;
-	top: 50px;
-	left: 200px;
-	position: relative;
+	top: 70px;
+	left: 220px;
 }
-.background__cloud-left::before {
-	content: "";
-	width: 150px;
+.cloud-left__center--left-near {
 	height: 80px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
 
-	position: absolute;
-	top: 50px;
-	left: 90px;
-	z-index: 5;
-
+	top: 120px;
+	left: 130px;
 }
-.background__cloud-left::after {
-	content: "";
-	width: 150px;
+.cloud-left__center--left-far {
+	height: 50px;
+
+	top: 150px;
+	left: 50px;
+}
+.cloud-left__center--right-near {
 	height: 80px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
 
-	position: absolute;
-	top: 50px;
-	right: 90px;
+	top: 120px;
+	left: 320px;
 }
-.cloud-left__inner {
-	position: relative;
-	top: 0;
-	left: 0;
-}
-
-.cloud-left__inner::after {
-	content: "";
-	width: 150px;
+.cloud-left__center--right-far {
 	height: 50px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
 
-	position: absolute;
-	top: 80px;
-	left: 160px;
+	top: 150px;
+	left: 400px;
 }
 
-.cloud-left__inner::before {
-	content: "";
-	width: 150px;
-	height: 50px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
-
-	position: absolute;
-	top: 80px;
-	right: 160px;
-}
 /* -----------CLOUD-RIGHT-------------- */
-
-.background__cloud-right {
-	width: 150px;
-	height: 130px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
-
-	position: absolute;
-	bottom: 30px;
-	left: 1000px;
-	position: relative;
-}
-
-.background__cloud-right::before {
-	content: "";
-	width: 150px;
-	height: 80px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
-
+.cloud-left__container--right {
 	position: absolute;
 	top: 50px;
-	left: 90px;
-	z-index: 5;
-
-}
-
-.background__cloud-right::after {
-	content: "";
-	width: 150px;
-	height: 80px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
-
-	position: absolute;
-	top: 50px;
-	right: 90px;
-}
-
-.cloud-right__inner {
-	position: relative;
-	top: 0;
-	left: 0;
-}
-
-.cloud-right__inner::after {
-	content: "";
-	width: 150px;
-	height: 50px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
-
-	position: absolute;
-	top: 80px;
-	left: 160px;
-}
-
-.cloud-right__inner::before {
-	content: "";
-	width: 150px;
-	height: 50px;
-	border-radius: 200px 200px 113px 113px / 150px 150px 0px 0px;
-	background-color: #fff;
-
-	position: absolute;
-	top: 80px;
-	right: 160px;
+	left: 800px;
 }
 /* ------------ROAD------------- */
-
 .picture__road {
 	width: 1920px;
 	height: 400px;
@@ -619,11 +527,7 @@ span{
 
 /* ------------HOUSE----------- */
 .picture__house {}
-
-.house {
-
-}
-
+.house {}
 .house__building {
 	height: 550px;
 	width: 500px;
@@ -638,7 +542,6 @@ span{
 	perspective-origin: center;
 	/* transform-style: preserve-3d; */
 }
-
 .house__roof {
 	height: 150px;
 	width: 550px;
@@ -653,7 +556,6 @@ span{
 
 	z-index: 60;
 }
-
 .house__window {
 	width: 90px;
 	height: 100px;
@@ -676,42 +578,30 @@ span{
 	top: 480px;
 	left: 150px;
 }
-
 .house__window--middle-center {
 	top: 480px;
 	left: 315px;
 }
-
 .house__window--middle-right {
 	top: 480px;
 	left: 480px;
 }
-
 .house__window--bottom-left {
 	top: 645px;
 	left: 150px;
 }
-
 .house__window--bottom-center {
 	top: 645px;
 	left: 315px;
 }
-
 .house__window--bottom-right {
 	top: 645px;
 	left: 480px;
 }
 
 /* -----------TAXI------------ */
-
-.picture__taxi>div{
-	/* background: yellow;
-	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
-}
 .picture__taxi {}
-
 .taxi {}
-
 .taxi__label{
 	width: 130px;
 	height: 40px;
@@ -729,8 +619,7 @@ span{
 .taxi__label:hover{
 	background-color: orange;
 }
-
-.taxi__body-front-top {
+.taxi__door-front-top {
 	width: 200px;
 	border-bottom: 100px solid yellow;
 	border-left: 45px solid transparent;
@@ -739,8 +628,7 @@ span{
 	bottom: 465px;
 	right: 450px;
 }
-
-.taxi__body-front-top::before {
+.taxi__door-front-top::before {
 	content: "";
 	width: 310px;
 	height: 20px;
@@ -751,9 +639,7 @@ span{
 	top: -8px;
 	left: 0px;
 }
-
-
-.taxi__body-front-bottom {
+.taxi__door-front-bottom {
 	width: 180px;
 	height: 140px;
 	background: yellow;
@@ -767,8 +653,7 @@ span{
 	bottom: 325px;
 	right: 470px;
 }
-
-.taxi__body-back-top {
+.taxi__door-back-top {
 	width: 200px;
 	border-bottom: 100px solid yellow;
 	border-right: 45px solid transparent;
@@ -777,8 +662,7 @@ span{
 	bottom: 465px;
 	right: 250px;
 }
-
-.taxi__body-back-bottom {
+.taxi__door-back-bottom {
 	width: 220px;
 	height: 140px;
 	background: yellow;
@@ -791,8 +675,7 @@ span{
 	bottom: 325px;
 	right: 250px;
 }
-
-.taxi__body-hood {
+.taxi__hood {
 	width: 160px;
 	height: 140px;
 	border-radius: 90% 35% 0% 100% / 100% 0% 100% 0%;
@@ -804,7 +687,7 @@ span{
 	bottom: 325px;
 	right: 650px;
 }
-.taxi__body-trunk {
+.taxi__trunk {
 	width: 130px;
 	height: 140px;
 	border-radius: 0% 100% 0% 100% / 100% 55% 45% 0%;
@@ -825,10 +708,8 @@ span{
 	bottom: 465px;
 	right: 340px;
 	border: 4px solid #000;
-
 }
-
-.taxi__window-back-triangle{
+.taxi__window-back-triangle {
 	width: 70px;
 	height: 100px;
 	background-color: lightblue;
@@ -859,7 +740,6 @@ span{
 	bottom: 465px;
 	right: 585px;
 }
-
 .taxi__window-front-borderleft {
 	width: 108px;
 	height: 3px;
@@ -879,7 +759,6 @@ span{
 	bottom: 465px;
 	right: 584px;
 }
-
 .taxi__window-front-borderleft--between{
 	width: 115px;
 	height: 3.8px;
@@ -888,7 +767,6 @@ span{
 	bottom: 513px;
 	right: 410.4px;
 }
-
 .taxi__decor {
 	width: 640px;
 	height: 15px;
@@ -910,9 +788,7 @@ span{
 
 	bottom: 405px;
 	right: 135px;
-
 }
-
 .taxi__part-decor {
 	width: 7px;
 	height: 15px;
@@ -922,8 +798,6 @@ span{
 	position: absolute;
 	bottom: 405px;
 	right: 128px;
-
-
 }
 .taxi__bumper {
 	width: 735px;
@@ -944,12 +818,10 @@ span{
 	border-radius: 50%;
 	border: 40px solid #000;
 	
-
 	position: absolute;
 	bottom: 235px;
 	right: 610px;
 }
-
 .taxi__wheel-front-move:hover .taxi__wheel-front {
 	transform: rotate(360deg);
 	transition: all 0.8s ease 0s;
@@ -968,7 +840,6 @@ span{
 	background-color: #fff;
 	border: 4px solid #000;
 	box-shadow: -25px 5px 25px 15px white;
-
 
 	position: absolute;
 	bottom: 330px;
