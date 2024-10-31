@@ -879,7 +879,7 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 .taxi__baby {
 	position: absolute;
 	top: -530px;
-	left: 1440px;
+	left: 1460px;
 }
 .taxi__baby img{
 	max-width: 77px;
