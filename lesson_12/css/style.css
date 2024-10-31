@@ -613,7 +613,7 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 
 	position: absolute;
 	top: 427px;
-	left: 130px;
+	left: 110px;
 
 	z-index: 13;
 }
@@ -877,10 +877,12 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 
 /* --------TAXI BABY---------- */
 .taxi__baby {
-	position: absolute;
+	position: relative;
+	top: -450px;
+	left: 1440px;
+	/* position: absolute;
 	top: -530px;
-	/* top: 638px; */
-	left: 1460px;
+	left: 1460px; */
 }
 .taxi__baby img{
 	max-width: 77px;
