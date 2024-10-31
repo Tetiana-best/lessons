@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_12_Анімації</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header lang="uk" class="header">
+			<div class="header__container">
+				<h1 class="header__title">Урок 12 "Анімації"</h1>
+				<!-- <ul class="header__list">
+					<li class="header__item-list"><a href="#practice-subtitle" title="Перейти до розділу 1">Практика</a></li>
+					<li class="header__item-list"><a href="#homework-subtitle" title="Перейти до розділу 2">Домашнє
+							завдання</a>
+					</li>
+				</ul> -->
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<!-- Практика -->
+				<!-- <div class="main__practice practice" id="practice-subtitle">
+					<div class="practice__container">
+						<h2 class="practice__title title">Практика</h2>
+
+					</div>
+				</div> -->
+				<!-- Домашнє завдання -->
+				<div class="main__homework homework" id="homework-subtitle">
+					<div class="homework__container">
+						<!-- <h2 class="homework__title title">Домашнє завдання</h2> -->
+						<div class="homework__picture picture">
+							<div class="picture__container">
+								<div class="picture__background background">
+									<div class="background__sky"></div>
+									<div class="background__sun-on">
+										<div class="background__sun"></div>
+									</div>
+									<div class="background__stork">
+										<img src="img/stork.webp" alt="stork with baby">
+									</div>
+									<div class="background__stork-back">
+										<img src="img/stork-back.webp" alt="stork">
+									</div>
+									<div class="background__cloud-left cloud-left">
+										<div class="cloud-left__container">
+											<div class="cloud-left__center"></div>
+											<div class="cloud-left__center cloud-left__center--left-near"></div>
+											<div class="cloud-left__center cloud-left__center--left-far"></div>
+											<div class="cloud-left__center cloud-left__center--right-near"></div>
+											<div class="cloud-left__center cloud-left__center--right-far"></div>
+										</div>
+									</div>
+									<div class="background__cloud-left cloud-left">
+										<div class="cloud-left__container cloud-left__container--right">
+											<div class="cloud-left__center"></div>
+											<div class="cloud-left__center cloud-left__center--left-near"></div>
+											<div class="cloud-left__center cloud-left__center--left-far"></div>
+											<div class="cloud-left__center cloud-left__center--right-near"></div>
+											<div class="cloud-left__center cloud-left__center--right-far"></div>
+										</div>
+									</div>
+									<div class="background__tree tree">
+										<div class="tree__trunk"></div>
+										<div class="tree__trunk tree__trunk--branch-top"></div>
+										<div class="tree__trunk tree__trunk--branch-right-top"></div>
+										<div class="tree__trunk tree__trunk--branch-right-bottom"></div>
+										<div class="tree__trunk tree__trunk--branch-left-top"></div>
+										<div class="tree__trunk tree__trunk--branch-left-bottom"></div>
+										<div class="tree__leaf-container">
+											<div class="tree__leaf"></div>
+											<div class="tree__leaf tree__leaf--right-top"></div>
+											<div class="tree__leaf tree__leaf--top-small"></div>
+											<div class="tree__leaf tree__leaf--top-big"></div>
+											<div class="tree__leaf tree__leaf--left-top"></div>
+											<div class="tree__leaf tree__leaf--left-bottom"></div>
+										</div>
+									</div>
+								</div>
+								<div class="picture__house house">
+									<div class="house__building">
+										<div class="house__roof"></div>
+									</div>
+									<div class="house__label">пологовий будинок №7</div>
+									<div class="house__windows">
+										<div class="house__window"></div>
+										<div class="house__window house__window--top-center"></div>
+										<div class="house__window house__window--top-right"></div>
+										<div class="house__window house__window--middle-left"></div>
+										<div class="house__window house__window--middle-center"></div>
+										<div class="house__window house__window--middle-right"></div>
+										<div class="house__window house__window--bottom-left"></div>
+										<div class="house__window house__window--bottom-center"></div>
+										<div class="house__window house__window--bottom-right"></div>
+									</div>
+								</div>
+								<div class="picture__baby baby">
+									<div class="baby__top">
+										<img src="img/baby.webp" alt="baby">
+										<h3 class="text">я</h3>
+									</div>
+									<div class="baby__top baby__top--center">
+										<img src="img/baby.webp" alt="baby">
+										<h3 class="text text--center">їду</h3>
+									</div>
+									<div class="baby__top baby__top--bottom">
+										<img src="img/baby.webp" alt="baby">
+										<h3 class="text text--bottom">додому</h3>
+									</div>
+								</div>
+
+								<div class="picture__road"></div>
+								<div class="picture__taxi taxi">
+									<div class="taxi__container">
+										<div class="taxi__door-front-top"></div>
+										<div class="taxi__door-front-bottom"></div>
+										<div class="taxi__door-back-top"></div>
+										<div class="taxi__door-back-bottom"></div>
+										<div class="taxi__hood"></div>
+										<div class="taxi__trunk"></div>
+										<div class="taxi__window-back-big"></div>
+										<div class="taxi__baby">
+											<img src="img/baby-car1.webp" alt="">
+										</div>
+										<div class="taxi__window-back-triangle"></div>
+										<div class="taxi__window-front-big"></div>
+										<div class="taxi__window-front-triangle"></div>
+										<div class="taxi__window-front-borderleft"></div>
+										<div class="taxi__window-front-borderleft taxi__window-front-borderleft--bottom"></div>
+										<div class="taxi__window-front-borderleft taxi__window-front-borderleft--between"></div>
+										<div class="taxi__decor"></div>
+										<div class="taxi__decor taxi__decor--bottom"></div>
+										<div class="taxi__part-decor"></div>
+										<div class="taxi__bumper"></div>
+										<div class="taxi__wheel-front-move">
+											<div class="taxi__wheel-front"></div>
+										</div>
+										<div class="taxi__wheel-back-move">
+											<div class="taxi__wheel-front taxi__wheel-front--back"></div>
+										</div>
+										<div class="taxi__label">taxi</div>
+										<div class="taxi__headlight-on">
+											<div class="taxi__headlight"></div>
+										</div>
+										<div class="taxi__backlight-on">
+											<div class="taxi__headlight taxi__headlight--backlight"></div>
+										</div>
+										<div class="taxi__front-door-handel"></div>
+										<div class="taxi__front-door-handel taxi__front-door-handel--back"></div>
+									</div>
+								</div>
+								<div class="picture__exhaust exhaust">
+									<div class="exhaust__inner">
+										<div class="exhaust__gases"></div>
+										<div class="exhaust__gases exhaust__gases--vertical"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-1"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-2"></div>
+									</div>
+								</div>
+								<div class="picture__exhaust exhaust">
+									<div class="exhaust__inner exhaust__inner--top">
+										<div class="exhaust__gases"></div>
+										<div class="exhaust__gases exhaust__gases--vertical"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-1"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-2"></div>
+									</div>
+								</div>
+								<div class="picture__exhaust exhaust">
+									<div class="exhaust__inner exhaust__inner--left">
+										<div class="exhaust__gases"></div>
+										<div class="exhaust__gases exhaust__gases--vertical"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-1"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-2"></div>
+									</div>
+								</div>
+								<div class="picture__exhaust exhaust">
+									<div class="exhaust__inner exhaust__inner--next-left">
+										<div class="exhaust__gases"></div>
+										<div class="exhaust__gases exhaust__gases--vertical"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-1"></div>
+										<div class="exhaust__gases exhaust__gases--diagonal-2"></div>
+									</div>
+								</div>
+								<div class="picture__balloons balloons">
+									<div class="balloons__container">
+										<div class="balloons__circle"></div>
+										<div class="balloons__tip-circle"></div>
+										<div class="balloons__rope"></div>
+									</div>
+								</div>
+								<div class="picture__balloons balloons">
+									<div class="balloons__container balloons__container--yellow">
+										<div class="balloons__circle"></div>
+										<div class="balloons__tip-circle"></div>
+										<div class="balloons__rope"></div>
+									</div>
+								</div>
+								<div class="picture__balloons balloons">
+									<div class="balloons__container balloons__container--green">
+										<div class="balloons__circle"></div>
+										<div class="balloons__tip-circle"></div>
+										<div class="balloons__rope"></div>
+									</div>
+								</div>
+
+
+
+
+								<div class="picture__end">
+									<span class="picture__letter picture__letter--1">д</span>
+									<span class="picture__letter picture__letter--2">а</span>
+									<span class="picture__letter picture__letter--3">л</span>
+									<span class="picture__letter picture__letter--4">і</span>
+									<span class="picture__letter picture__letter--5">б</span>
+									<span class="picture__letter picture__letter--6">у</span>
+									<span class="picture__letter picture__letter--7">д</span>
+									<span class="picture__letter picture__letter--8">е</span>
+									<span class="picture__letter picture__letter--9">.</span>
+									<span class="picture__letter picture__letter--10">.</span>
+									<span class="picture__letter picture__letter--11">.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</main>
+
+	<footer class="footer" lang="uk">
+		<div class="footer__container">
+			<h2 class="footer__title">Всі права захищені!</h2>
+		</div>
+	</footer>
+	</div>
+</body>
+
+</html>
