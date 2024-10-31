@@ -603,7 +603,7 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 	font-size: 32px;
 	font-weight: 900;
 	text-transform: uppercase;
-	letter-spacing: 1.3;
+	letter-spacing: 1.3px;
 	color: red;
 	text-shadow: 2px -2px 1px #000;
 
