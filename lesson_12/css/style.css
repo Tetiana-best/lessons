@@ -864,7 +864,7 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 	right: 340px;
 	overflow: hidden;
 	
-	z-index: 1;
+	z-index: 56;
 
 	animation: baby-car 8s linear 42s 1 normal forwards;
 }
