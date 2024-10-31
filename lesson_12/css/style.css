@@ -736,6 +736,14 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 
 	animation: car-move 20s ease 36s 1 normal forwards;
 }
+.taxi__inner{
+	width: 739px;
+	height: 379px;
+
+	position: absolute;
+	top: -350px;
+	left: 1100px;
+}
 @keyframes car-move {
 	0%, 2%,10% {
 		transform: translate(0px, 0px);
@@ -856,7 +864,7 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 	right: 340px;
 	overflow: hidden;
 	
-	z-index: 0;
+	z-index: 1;
 
 	animation: baby-car 8s linear 42s 1 normal forwards;
 }
@@ -878,9 +886,9 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 /* --------TAXI BABY---------- */
 .taxi__baby {
 	position: absolute;
-	top: -530px;
-	/* left: 1370px; */
-	transform: translateX(1440px);
+	top: -183px;
+	left: 300px;
+	/* transform: translateX(1440px); */
 }
 .taxi__baby img{
 	max-width: 77px;
