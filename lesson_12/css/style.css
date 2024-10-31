@@ -856,7 +856,7 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 	right: 340px;
 	overflow: hidden;
 	
-	z-index: 1;
+	z-index: 0;
 
 	animation: baby-car 8s linear 42s 1 normal forwards;
 }
@@ -879,7 +879,8 @@ animation: cloud-move 55s linear 0s infinite alternate forwards;
 .taxi__baby {
 	position: absolute;
 	top: -530px;
-	left: 1327px;
+	/* left: 1370px; */
+	transform: translateX(1440px);
 }
 .taxi__baby img{
 	max-width: 77px;
