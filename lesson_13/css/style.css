@@ -297,21 +297,21 @@ body {}
 .contacts__columns {
 	display: flex;
 }
-.contact__column {}
-.contact__column:first-child{
+.contacts__column {}
+.contacts__column:first-child{
 	max-width: 248px;
 	margin: -74px 68px 0px 0px;
 	flex-shrink: 0;
 }
-.contact__column--center{
+.contacts__column--center{
 	margin-inline-end: 38px;
 	transform: translateY(80px);
 }
-.contact__column:last-child {
+.contacts__column:last-child {
 	margin-block-start: -60px;
 }
-.contact__body-column {}
-.contact__gift-background-star {
+.contacts__body-column {}
+.contacts__gift-background-star {
 	background: url("../img/portfolio_work_star_background_gift.svg") 0 0 / 148px no-repeat;
 	width: 148px;
 	height: 148px;
@@ -319,7 +319,7 @@ body {}
 
 	margin-block-end: 19px;
 }
-.contact__gift{
+.contacts__gift{
 	max-width: 32px;
 	
 	position: absolute;
@@ -327,14 +327,14 @@ body {}
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.contact__title {
+.contacts__title {
 	margin-block-end: 23px;
 }
-.contact__label {}
+.contacts__label {}
 .label--margin{
 	margin-block-end: 13px;
 }
-.contact__subtitle {
+.contacts__subtitle {
 	color: #391400;
 	font-family: Epilogue;
 	font-size: 24px;
@@ -342,7 +342,7 @@ body {}
 	font-weight: 700;
 	line-height: 1.33333;
 }
-.contact__button {
+.contacts__button {
 	padding-block-end: 64px;
 }
 .button {}
@@ -355,14 +355,14 @@ body {}
 }
 .button__item {}
 
-.contact__card-picture {
+.contacts__card-picture {
 	position: relative;
 	width: 338px;
 
 	top: 0;
 	left: 0;
 }
-.contact__card-picture::before {
+.contacts__card-picture::before {
 	content: "";
 	width: 306px;
 	height: 176px;
@@ -376,7 +376,7 @@ body {}
 
 	transform: translateX(-50%);
 }
-.contact__card-picture::after {
+.contacts__card-picture::after {
 	content: "";
 	width: 274px;
 	height: 176px;
@@ -390,7 +390,7 @@ body {}
 
 	transform: translateX(-50%);
 }
-.contact__card-image {
+.contacts__card-image {
 	max-width: 338px;
 	border-radius: 6px;
 	
@@ -401,14 +401,14 @@ body {}
 
 	z-index: 1;
 }
-.contact__cloud-picture {}
+.contacts__cloud-picture {}
 
-.contact__girl-foto {
+.contacts__girl-foto {
 	background: url("../img/portfolio_work_cloud-design.svg") 0 107px / 282px no-repeat;
 	width: 282px;
 	min-height: 242px;
 }
-.contact__girl-image {
+.contacts__girl-image {
 	max-width: 239px;
 
 	position: relative;
