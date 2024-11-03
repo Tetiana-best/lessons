@@ -537,7 +537,7 @@ body {}
 .events__text {
 	color: rgba(255, 255, 255, 0.64);
 }
-
+.events__footer-events{}
 .events__link {}
 
 .events__button {}
