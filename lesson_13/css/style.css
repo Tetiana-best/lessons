@@ -527,14 +527,15 @@ body {}
 }
 
 .events__name {
+	margin-block-end: 19px;
+}
+.name {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.33333;
-
-	margin-block-end: 19px;
 }
-
-.events__text {
+.events__description {}
+.description{
 	color: rgba(255, 255, 255, 0.64);
 }
 .events__footer-events{}
@@ -545,6 +546,123 @@ body {}
 .button {}
 
 .button__item {}
+
+/* ---------PORTFOLIO-OUR-TEAM------------ */
+
+.portfolio-template__team {}
+
+.team {}
+
+.team--margin {
+	margin-block-end: 180px;
+}
+
+.team__container {
+	max-width: 1230px;
+}
+.team__header-team{
+	display: flex;
+	justify-content: space-between;
+	gap: 527px;
+
+	margin-block-end: 64px;
+}
+.team__title {}
+.title {}
+.title__label {}
+.label {}
+.title__subtitle {}
+.subtitle {}
+.subtitle--big-width-left {
+	flex-basis: 44.25%; /* 531/1200 */
+	text-align: left;
+	flex-shrink: 0;
+}
+.team__arrows{
+	display: flex;
+	gap: 50px;
+
+	align-items: end;
+	padding: 0 17px 19.5px 0;
+}
+.team__right-arrow{
+	background: url("../img/portfolio_team_arrow-right.svg") 0 0/ 14.001px no-repeat;
+	width: 14.001px;
+	height: 9.001px;
+	min-height: 14.001px;
+
+	position: relative;
+	}
+.team__right-arrow::before {
+	content: "";
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 1px solid #3A3C56;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.team__left-arrow{
+	background: url("../img/portfolio_team_arrow-left.svg") 0 0/ 14.001px no-repeat;
+	width: 14.001px;
+	height: 9.001px;
+	min-height: 14.001px;
+
+	position: relative;
+}
+.team__left-arrow::before {
+	content: "";
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 1px solid #3A3C56;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.team__fotos {
+	display: flex;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.team__foto {
+	flex-basis: 270px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.foto__container-foto {
+	display: flex;
+	flex-basis: 270px;
+	min-height: 271px;
+	justify-content: center;
+	align-items: flex-end;
+	border: 1px solid #3A3C56;
+
+	height: 100%;
+
+	margin-block-end: 36px;
+}
+.foto__container-foto img{
+	max-width: 100%;
+}
+.foto__body-subtext{}
+.foto__name {
+	margin-block-end: 3px;
+}
+
+.name {}
+
+.foto__description {}
+
+.description {}
+
+.team__element {}
+
 
 /* ----------FOOTER------------ */
 
