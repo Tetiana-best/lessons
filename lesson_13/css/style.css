@@ -427,7 +427,7 @@ body {}
 .button__item--orange {
 	background-color: #EF6D58;
 	
-	text-decoration: 0.3s;
+	transition-duration: 0.3s;
 }
 .button__item--orange:hover{
 	background: linear-gradient(45deg, #8B4513, #D2691E, #FF8C00, #8B4513);
