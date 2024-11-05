@@ -772,19 +772,20 @@ body {}
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
-	background-color: #EF6D58;
 	border: 1px solid #3A3C56;
 	text-align: center;
 	transition-duration: 0.3s;
 }
 .team__element--center-transparent,
-.team__element--right-transparent {
+.team__element--right-transparent,
+.team__element--left-transparent {
 	background-color: transparent;
 	transition-duration: 0.5s;
 }
 
 .team__element--center-transparent:hover,
-.team__element--right-transparent:hover{
+.team__element--right-transparent:hover,
+.team__element--left-transparent:hover{
 	background-color: #EF6D58;
 }
 
