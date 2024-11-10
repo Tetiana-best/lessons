@@ -238,7 +238,7 @@ body {}
 
 .homework__portfolio-brooklyn {
 	font-family: "Work Sans", serif;
-	/* background-color: #FFF; */
+	background-color: #FFF;
 }
 .portfolio-brooklyn {}
 .portfolio-brooklyn__container {
@@ -247,7 +247,6 @@ body {}
 	padding-block-end: 16px;
 
 	border-radius: 0 15px 15px 0;
-	background-color: #fff;
 	color: #87909D;
 
 	font-size: 18px;
