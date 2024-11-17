@@ -257,7 +257,7 @@ body {}
 
 .latest-work__card {
 	flex-direction: column;
-	/* aspect-ratio: 470 / 416; */
+	aspect-ratio: 470 / 416;
 	min-height: 416px;
 	position: relative;
 
