@@ -256,7 +256,7 @@ body {}
 	}
 }
 .slider__left-arrow {
-	flex-basis: 0 1 21.79%; /* 56/257 */
+	flex: 0 1 21.79%; /* 56/257 */
 
 	border-radius: 8px;
 	background-color: #1A1A1A;
