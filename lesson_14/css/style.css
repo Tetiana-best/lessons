@@ -162,14 +162,16 @@ body {}
 	padding: 20px;
 	
 	color: #999;
-	transition-duration: 0.3s;
+
+	transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+	
 }
 .dark-feedback__input:hover{
 	background: linear-gradient(145deg, #000000, #d7c32bb8);
 	box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2), 0 4px 10px rgba(0, 0, 0, 0.5);
 	border: 1px solid #fff;
 
-	transition: background 1s ease 0s, box-shadow 0.7s ease 0s, border 0.5s ease 0s;
+	transition: background 1s ease, box-shadow 0.7s ease, border 0.5s ease;
 }
 .dark-feedback__input--message{
 	resize: vertical;
@@ -219,6 +221,10 @@ body {}
 }
 .dark-feedback__item-checkbox:checked+.dark-feedback__box-label::before {
 	background: black url("../img/check_mark.webp") center / contain no-repeat;
+}
+.dark-feedback__item-checkbox:focus-visible+.dark-feedback__box-label {
+	outline: 2px solid white;
+	border-radius: 5px;
 }
 .dark-feedback__button {
 	flex-basis: 173px;
