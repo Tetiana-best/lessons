@@ -820,7 +820,7 @@ body {}
 	width: 100%;
 	height: auto;
 	max-height: 100%;
-	object-fit: content;
+	object-fit: contain;
 	border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
 
 }
