@@ -34,7 +34,7 @@ body {}
 	position: relative;
 	z-index: 6;
 
-	/* position: fixed; */
+	position: fixed;
 
 	animation: header-move 2s ease-out 1 forwards;
 }
