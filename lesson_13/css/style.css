@@ -318,7 +318,6 @@ body {}
 	transform: rotate(360deg) scale(0);
 	transition-duration: 0.8s;
 }
-.latest-work__image{}
 
 .latest-work__content-card {
 	position: relative;
@@ -617,7 +616,7 @@ body {}
 .contacts__girl-foto {
 	position: relative;
 	flex-basis: 295px;
-	align-self: flex-endend;
+	align-self: flex-end;
 	padding-left: 53px;
 
 	margin-block-start: -60px;
