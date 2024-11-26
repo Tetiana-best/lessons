@@ -520,7 +520,7 @@ body {}
 
 	z-index: -1;
 
-	animation: star-move 5s linear 1s 1 forwards, star-move-infinite 5s linear 11s infinite forwards;
+	animation: star-move 5s linear 1s 1 forwards, star-move-infinite 5s linear 6s infinite forwards;
 }
 @keyframes star-move {
 	0% {
@@ -558,7 +558,7 @@ body {}
  }
 .modern-studio__description {
 	opacity: 0;
-	animation: description-move 3s ease-out 5s 1 forwards;
+	animation: description-move 2s ease-out 4s 1 forwards;
 }
 @keyframes description-move {
 		0% {
@@ -662,7 +662,7 @@ body {}
 
 	position: relative;
 
-	animation: visual-move 3s ease-out 7s 1 forwards;
+	animation: visual-move 3s ease-out 4.5s 1 forwards;
 }
 				/* @keyframes visual-move {
 					0% {
@@ -712,8 +712,7 @@ body {}
 }
 .promo-visual__laptop {
 	width: 43.1579%; /* 246/570 */
-	height: 51.6949%; /* 305/590 */
-	/* aspect-ratio: 246 / 305; */
+	aspect-ratio: 255 / 265;
 
 	position: absolute;
 	top: 4.0678%; /* 24/590 */
@@ -722,15 +721,15 @@ body {}
 	
 }
 .promo-visual__laptop img{
-	/* max-width: 100%; */
+	max-width: 100%;
 	width: 100%;
 	height: 100%;
 	/* height: auto; */
-	/* max-height: 100%; */
+	max-height: 100%;
 	object-fit: cover;
 	object-position: bottom;
 	overflow: hidden;
-	border-radius: 0 0 6px 6px
+	border-radius: 0 0 6px 6px;
 }
 .promo-visual__laptop::before {
 	content: "";
@@ -752,8 +751,8 @@ body {}
 	aspect-ratio: 142 / 73;
 
 	position: absolute;
-	top: 103.6066%; /* 316/305 */
-	left: 0;
+	top: 119.2453%; /* 316/265 */
+	left: -8.2353%; /* -21/255 */
 
 	z-index: 3;
 }
@@ -803,7 +802,7 @@ body {}
 }
 .promo-visual__girl {
 	width: 43.1579%; /* 246/570 */
-	aspect-ratio: 246 / 305;
+	aspect-ratio: 246 / 269;
 
 	position: absolute;
 	top: 32.0339%; /* 189/590 */
@@ -816,7 +815,7 @@ body {}
 .promo-visual__girl img{
 	max-width: 100%;
 	width: 100%;
-	height: auto;
+	/* height: auto; */
 	max-height: 100%;
 	object-fit: contain;
 	border-radius: 0 0 6px 6px;
@@ -879,7 +878,7 @@ body {}
 	gap: 16px;
 
 	opacity: 0;
-	animation: citata-move 4s ease-out 6s 1 forwards;
+	animation: citata-move 4s ease-out 4s 1 forwards;
 }
 @keyframes citata-move {
 	0% {
