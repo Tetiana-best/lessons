@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson_17_Grrid</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="main">
+			<main class="page">
+				<!-- FLEX -->
+				<div class="portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__page-header page-header">
+							<div class="page-header__label page-header__label--animaton">Portfolio</div>
+							<h2 class="page-header__title page-header__title--animaton">
+								<span>L</span><span>a</span><span>t</span><span>e</span><span>s</span><span>s</span><span>t</span>
+								<span>W</span><span>o</span><span>r</span><span>k</span>
+							</h2>
+							<ul class="page-header__filters filters">
+								<li class="filters__item filters__item--active"><a href="#">Show
+										All<sup>14</sup></a></li>
+								<li class="filters__item"><a href="#">Design<sup>6</sup></a></li>
+								<li class="filters__item"><a href="#">Branding<sup>4</sup></a></li>
+								<li class="filters__item"><a href="#">Illustration<sup>3</sup></a></li>
+								<li class="filters__item"><a href="#">Motion<sup>1</sup></a></li>
+							</ul>
+						</div>
+						<div class="portfolio__drop-down drop-down">
+							<select class="drop-down__area-list">
+								<option class="drop-down__list-item" value="Show All" selected>Show
+									All</option>
+								<option class="drop-down__list-item" value="Design">Design</option>
+								<option class="drop-down__list-item" value="Branding">Branding</option>
+								<option class="drop-down__list-item" value="Illustration">Illustration</option>
+								<option class="drop-down__list-item" value="Motion">Motion</option>
+							</select>
+						</div>
+						<div class="portfolio__cards">
+							<a href="#" class="portfolio__card card-portfolio">
+								<picture>
+									<source srcset="img/portfolio_work_design-sofa-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_design-sofa.webp"
+										alt="A room in the Roman style with a round arch in beige tones, in the middle of which there is a low pedestal in the form of round steps.">
+								</picture>
+								<div class="card-portfolio__content">
+									<div class="card-portfolio__category">Design</div>
+									<h3 class="card-portfolio__title">Branding</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio__card card-portfolio">
+								<picture>
+									<source srcset="img/portfolio_work_branding-keyboard-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_branding-keyboard.webp"
+										alt="The image shows a close-up of part of what looks like a tower with rounded steps in pink and beige tones.">
+								</picture>
+								<div class="card-portfolio__content">
+									<div class="card-portfolio__category">SOFA</div>
+									<h3 class="card-portfolio__title">KeyBoard</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio__card card-portfolio">
+								<picture>
+									<source srcset="img/portfolio_work_illustration-media-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_illustration-media.webp"
+										alt="Four beige cylinders of different heights.">
+								</picture>
+
+								<div class="card-portfolio__content">
+									<div class="card-portfolio__category">Illustration</div>
+									<h3 class="card-portfolio__title">Motion</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio__card card-portfolio">
+								<picture>
+									<source srcset="img/portfolio_work_motion-done-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_motion-done.webp"
+										alt="Three cubes on a pink-beige background: the first contains a horizontal golden cylinder, which we can see through the round holes, the second contains a vertical cylinder, which can be seen through one round hole, and the third contains a golden ball inside, which can be seen through two round holes.">
+								</picture>
+								<div class="card-portfolio__content">
+									<div class="card-portfolio__category">Work Media</div>
+									<h3 class="card-portfolio__title">DDDone</h3>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="portfolio__button">
+							<span>Explore More</span>
+						</a>
+					</div>
+				</div>
+				<!-- GRID -->
+				<div class="portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__page-header page-header">
+							<div class="page-header__label">Portfolio</div>
+							<h2 class="page-header__title">Latest Work</h2>
+							<ul class="page-header__filters filters">
+								<li class="filters__item filters__item--active"><a href="#">Show
+										All<sup>14</sup></a></li>
+								<li class="filters__item"><a href="#">Design<sup>6</sup></a></li>
+								<li class="filters__item"><a href="#">Branding<sup>4</sup></a></li>
+								<li class="filters__item"><a href="#">Illustration<sup>3</sup></a></li>
+								<li class="filters__item"><a href="#">Motion<sup>1</sup></a></li>
+							</ul>
+						</div>
+						<div class="portfolio__drop-down drop-down">
+							<select class="drop-down__area-list">
+								<option class="drop-down__list-item" value="Show All" selected>Show
+									All</option>
+								<option class="drop-down__list-item" value="Design">Design</option>
+								<option class="drop-down__list-item" value="Branding">Branding</option>
+								<option class="drop-down__list-item" value="Illustration">Illustration</option>
+								<option class="drop-down__list-item" value="Motion">Motion</option>
+							</select>
+						</div>
+						<div class="portfolio__rows-grid">
+							<a href="#" class="portfolio__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_design-sofa-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_design-sofa.webp"
+										alt="A room in the Roman style with a round arch in beige tones, in the middle of which there is a low pedestal in the form of round steps.">
+								</picture>
+								<div class="column-grid__content">
+									<div class="column-grid__category">Design</div>
+									<h3 class="column-grid__title">Branding</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_branding-keyboard-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_branding-keyboard.webp"
+										alt="The image shows a close-up of part of what looks like a tower with rounded steps in pink and beige tones.">
+								</picture>
+								<div class="column-grid__content">
+									<div class="column-grid__category">SOFA</div>
+									<h3 class="column-grid__title">KeyBoard</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_illustration-media-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_illustration-media.webp"
+										alt="Four beige cylinders of different heights.">
+								</picture>
+
+								<div class="column-grid__content">
+									<div class="column-grid__category">Illustration</div>
+									<h3 class="column-grid__title">Motion</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_motion-done-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_motion-done.webp"
+										alt="Three cubes on a pink-beige background: the first contains a horizontal golden cylinder, which we can see through the round holes, the second contains a vertical cylinder, which can be seen through one round hole, and the third contains a golden ball inside, which can be seen through two round holes.">
+								</picture>
+								<div class="column-grid__content">
+									<div class="column-grid__category">Work Media</div>
+									<h3 class="column-grid__title">DDDone</h3>
+								</div>
+							</a>
+
+						</div>
+						<a href="#" class="portfolio__button">
+							<span>Explore More</span>
+						</a>
+					</div>
+				</div>
+
+
+				<!-- GRID LIGHT -->
+				<div class="portfolio-light">
+					<div class="portfolio-light__container">
+						<ul class="portfolio-light__filters filters">
+							<li class="filters__item filters__item--active filters__item--light-active"><a href="#">Show
+									All<sup>14</sup></a></li>
+							<li class="filters__item filters__item--light"><a href="#">Design<sup>6</sup></a></li>
+							<li class="filters__item filters__item--light"><a href="#">Branding<sup>4</sup></a></li>
+							<li class="filters__item filters__item--light"><a href="#">Illustration<sup>3</sup></a></li>
+							<li class="filters__item filters__item--light"><a href="#">Motion<sup>1</sup></a></li>
+						</ul>
+						<div class="portfolio-light__drop-down drop-down drop-down--light">
+							<select class="drop-down__area-list">
+								<option class="drop-down__list-item" value="Show All" selected>Show
+									All</option>
+								<option class="drop-down__list-item" value="Design">Design</option>
+								<option class="drop-down__list-item" value="Branding">Branding</option>
+								<option class="drop-down__list-item" value="Illustration">Illustration</option>
+								<option class="drop-down__list-item" value="Motion">Motion</option>
+							</select>
+						</div>
+						<div class="portfolio-light__rows-grid">
+							<a href="#" class="portfolio-light__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_branding-keyboard-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_branding-keyboard.webp"
+										alt="The image shows a close-up of part of what looks like a tower with rounded steps in pink and beige tones.">
+								</picture>
+								<div class="column-grid__content">
+									<div class="column-grid__category">Branding</div>
+									<h3 class="column-grid__title">KeyBoard</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio-light__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_design-sofa-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_design-sofa.webp"
+										alt="A room in the Roman style with a round arch in beige tones, in the middle of which there is a low pedestal in the form of round steps.">
+								</picture>
+								<div class="column-grid__content">
+									<div class="column-grid__category column-grid__category--mobil">Design</div>
+									<h3 class="column-grid__title column-grid__title--media">SOFA</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio-light__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_illustration-media-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_illustration-media.webp"
+										alt="Four beige cylinders of different heights.">
+								</picture>
+
+								<div class="column-grid__content">
+									<div class="column-grid__category column-grid__category--mobil">Illustration</div>
+									<h3 class="column-grid__title column-grid__title--media">Work Media</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio-light__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio_work_motion-done-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio_work_motion-done.webp"
+										alt="Three cubes on a pink-beige background: the first contains a horizontal golden cylinder, which we can see through the round holes, the second contains a vertical cylinder, which can be seen through one round hole, and the third contains a golden ball inside, which can be seen through two round holes.">
+								</picture>
+								<div class="column-grid__content">
+									<div class="column-grid__category column-grid__category--mobil">Motion</div>
+									<h3 class="column-grid__title column-grid__title--media">DDDone</h3>
+								</div>
+							</a>
+							<a href="#" class="portfolio-light__column-grid column-grid">
+								<picture>
+									<source srcset="img/portfolio-light_branding-HandP-2x.webp 2x" type="image/webp">
+									<img src="img/portfolio-light_branding-HandP.webp"
+										alt="Three cubes on a pink-beige background: the first contains a horizontal golden cylinder, which we can see through the round holes, the second contains a vertical cylinder, which can be seen through one round hole, and the third contains a golden ball inside, which can be seen through two round holes.">
+								</picture>
+								<div class="column-grid__content">
+									<div class="column-grid__category column-grid__category--mobil">Branding</div>
+									<h3 class="column-grid__title column-grid__title--media">HandP</h3>
+								</div>
+							</a>
+						</div>
+						<div class="portfolio-light__slider slider">
+							<a href="#" class="slider__button slider__button--active">
+								<span>1</span>
+							</a>
+							<a href="#" class="slider__button">
+								<span>2</span>
+							</a>
+							<a href="#" class="slider__button">
+								<span>3</span>
+							</a>
+							<a href="#" class="slider__button">
+								<span>4</span>
+							</a>
+							<a href="#" class="slider__button">
+								<span>5</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer" lang="uk">
+				<div class="footer__container">
+					<h2 class="footer__title">Всі права захищені!</h2>
+				</div>
+			</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
