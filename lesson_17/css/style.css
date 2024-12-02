@@ -519,9 +519,11 @@ body {}
 	transform: skew(-30deg) translate(-100%, -25%);
 	will-change: left;
 }
-.portfolio__button:hover::before {
-	left: 150%;
-	transition: left 1s;
+@media (any-hover: hover){
+	.portfolio__button:hover::before{
+		left: 150%;
+		transition: left 1s;
+	}
 }
 
 
