@@ -125,7 +125,7 @@ body {}
 	animation-delay: 1.1s;
 }
 .page-header__title--animaton span:nth-child(3) {
-	animation-delay: 2.1s;
+	animation-delay: 2.0s;
 }
 .page-header__title--animaton span:nth-child(4) {
 	animation-delay: 1.2s;
@@ -148,9 +148,7 @@ body {}
 .page-header__title--animaton span:nth-child(10) {
 	animation-delay: 1.8s;
 }
-.page-header__title--animaton span:nth-child(11) {
-	animation-delay: 1.9s;
-}
+
 @keyframes title-move {
 	0% {
 		transform: translateY(0px);
