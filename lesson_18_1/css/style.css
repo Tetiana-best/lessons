@@ -541,7 +541,7 @@ body {
 			position: absolute;
 			top: 0;
 			left: 0;
-			object-fit: cover;
+			/* object-fit: cover; */
 			object-position: left;
 		}
 }
@@ -549,6 +549,11 @@ body {
 	.top-page__image img {
 			object-position: center;
 		}
+}
+@media (min-width:767.98px) and (max-width:2324px) {
+	.top-page__image img {
+		object-fit: cover;
+	}
 }
 @media (max-width:2325px) {
 	.top-page__image img {
