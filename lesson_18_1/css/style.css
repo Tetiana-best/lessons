@@ -557,7 +557,7 @@ body {
 }
 @media (max-width:2325px) {
 	.top-page__image img {
-		object-position: contain;
+		object-fit: contain;
 	}
 }
 /* ----POWERFUL TOP---- */
