@@ -605,12 +605,14 @@ body {
 	margin-block-end: 10px;
 }
 .powerful-top__promo-footer {
-	display: flex;
-	gap: 40px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+	column-gap: 30px;
+	row-gap: 15px;
+
 }
-.powerful-top__item {
-	flex-basis: 50%;
-}
+.powerful-top__item {}
 .powerful-top__icon {
 	max-width: 36px;
 	aspect-ratio: 36 / 36;
@@ -766,6 +768,7 @@ body {
 .text {}
 .powerful-bottom__purchase {
 	display: flex;
+	padding-block-end: 10px;
 }
 .powerful-bottom__button {
 	flex-basis: 150px;
@@ -844,6 +847,8 @@ body {
 	line-height: 1.71429;
 	display: flex;
 	justify-content: center;
+
+	padding-block-end: 10px;
 }
 .price__button{
 	flex-basis: 189px;
@@ -871,20 +876,21 @@ body {
 	padding-block: 61px 32px;
 }
 .footer__top {
-	display: flex;
-	justify-content: space-between;
-	gap: 30px;
+	display: grid;
+	grid-template-columns: minmax(133px, 1fr) 1fr minmax(109px, auto);
+	column-gap: 30px;
+	row-gap: 5px;
 	align-items: center;
 
 	margin-block-end: 61px;
 
 	position: relative;
 }
-@media (max-width:479.98px){
+@media (max-width:479.98px) {
 	.footer__top {
-			display: block;
-			text-align: center;
-		}
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
 }
 .footer__top::after {
 	content: "";
@@ -904,17 +910,11 @@ body {
 .footer__logo {}
 .logo-header {}
 .logo-header__title {}
-@media (max-width:479.98px) {
-	.logo-header__title {
-		margin-block-end: 10px;
-	}
-}
-.footer__button {
-	flex-basis: 109px;
-}
+.footer__button {}
+
 @media (max-width:479.98px) {
 	.footer__button {
-		width: 100%;
+		justify-self: stretch;
 		font-size: 16px;
 	}
 }

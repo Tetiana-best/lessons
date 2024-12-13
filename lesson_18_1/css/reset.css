@@ -62,5 +62,8 @@ input[type="tel"],
 textarea {
 	appearance: none;
 }
-
+table{
+	inline-size: 100%;
+	border-collapse: collapse;
+}
 /*-------------*/
