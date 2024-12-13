@@ -683,6 +683,7 @@ body {
 @media (max-width:675px){
 	.light__container {
 				flex-wrap: wrap;
+				flex-direction: column-reverse;
 		}
 }
 .light__visual {
@@ -726,6 +727,7 @@ body {
 @media (max-width:675px) {
 	.fast__container {
 		flex-wrap: wrap;
+		flex-direction: column-reverse;
 	}
 }
 .fast__visual {
@@ -758,6 +760,7 @@ body {
 @media (max-width:675px) {
 	.powerful-bottom__container {
 		flex-wrap: wrap;
+		flex-direction: column-reverse;
 	}
 }
 .powerful-bottom__visual {
