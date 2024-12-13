@@ -440,15 +440,12 @@ body {
 	padding-block-end: 10px;
 
 	display: flex;
-	gap: 30.15px;
+	column-gap: 30.15px;
+	row-gap: 10px;
+	flex-wrap: wrap;
 
 	opacity: 0;
 	animation: buttons-move 1s ease-out 1s 1 forwards;
-}
-@media (max-width:845px) {
-.top-page__buttons {
-		flex-wrap: wrap;
-	}
 }
 @keyframes buttons-move {
 	0% {
@@ -501,7 +498,7 @@ body {
 						text-shadow 0.5s, box-shadow 0.3s;
 	}
 }
-@media (max-width:845px){
+@media (max-width:872px){
 	.top-page__button {
 			flex-basis: 100%;
 		}
