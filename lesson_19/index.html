@@ -14,7 +14,9 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo logo-header" href="#">
-					<img class="logo-header__img" src="img/portfolio-agency_logo-agency.svg" alt="Icon logo">
+					<div class="logo-header__image">
+						<img src="img/portfolio-agency_logo-agency.svg" alt="Icon logo">
+					</div>
 					<h1 class="logo-header__title">Agency</h1>
 				</div>
 				<div class="header__menu menu">
@@ -71,9 +73,9 @@
 						<article class="portfolio__card">
 							<a href="#" class="portfolio__body-card">
 								<figure>
-									<picture>
+									<picture class="portfolio__image">
 										<source srcset="img/portfolio_work_design-sofa-2x.webp 2x" type="image/webp">
-										<img class="portfolio__image" src="img/portfolio_work_design-sofa.webp"
+										<img src="img/portfolio_work_design-sofa.webp"
 											alt="A room in the Roman style with a round arch in beige tones, in the middle of which there is a low pedestal in the form of round steps.">
 									</picture>
 									<figcaption class="portfolio__content-card">
@@ -86,9 +88,9 @@
 						<article class="portfolio__card">
 							<a href="#" class="portfolio__body-card">
 								<figure>
-									<picture>
+									<picture class="portfolio__image">
 										<source srcset="img/portfolio_work_branding-keyboard-2x.webp 2x" type="image/webp">
-										<img class="portfolio__image" src="img/portfolio_work_branding-keyboard.webp"
+										<img src="img/portfolio_work_branding-keyboard.webp"
 											alt="The image shows a close-up of part of what looks like a tower with rounded steps in pink and beige tones.">
 									</picture>
 									<figcaption class="portfolio__content-card">
@@ -101,9 +103,9 @@
 						<article class="portfolio__card">
 							<a href="#" class="portfolio__body-card">
 								<figure>
-									<picture>
+									<picture class="portfolio__image">
 										<source srcset="img/portfolio_work_illustration-media-2x.webp 2x" type="image/webp">
-										<img class="portfolio__image" src="img/portfolio_work_illustration-media.webp"
+										<img src="img/portfolio_work_illustration-media.webp"
 											alt="Four beige cylinders of different heights.">
 									</picture>
 									<figcaption class="portfolio__content-card">
@@ -116,9 +118,9 @@
 						<article class="portfolio__card">
 							<a href="#" class="portfolio__body-card">
 								<figure>
-									<picture>
+									<picture class="portfolio__image">
 										<source srcset="img/portfolio_work_motion-done-2x.webp 2x" type="image/webp">
-										<img class="portfolio__image" src="img/portfolio_work_motion-done.webp"
+										<img src="img/portfolio_work_motion-done.webp"
 											alt="Three cubes on a pink-beige background: the first contains a horizontal golden cylinder, which we can see through the round holes, the second contains a vertical cylinder, which can be seen through one round hole, and the third contains a golden ball inside, which can be seen through two round holes.">
 									</picture>
 									<figcaption class="portfolio__content-card">
@@ -137,8 +139,7 @@
 				<div class="contacts__container">
 					<div class="contacts__promo">
 						<div class="contacts__gift-background-star">
-							<img class="contacts__img-gift" src="img/portfolio_work_white_gift_vector.svg"
-								alt="vector image of white gift box">
+							<img src="img/portfolio_work_white_gift_vector.svg" alt="vector image of white gift box">
 						</div>
 						<div class="contacts__title">
 							<p class="contacts__label label">Get Started</p>
@@ -151,13 +152,11 @@
 						<img src="img/portfolio_work_card-content.svg"
 							alt="Content image in the form of a white rectangle, on which there is a small yellow circle on top, then two orange rectangles and below a purple stripe, on the right there is an orange arrow pointing up.">
 					</div>
-					<div class="contacts__girl-foto">
-						<picture>
-							<source srcset="img/portfolio_work_brunette-girl-2x.webp 2x" type="image/webp">
-							<img src="img/portfolio_work_brunette-girl.webp"
-								alt="The image shows a close-up of part of what looks like a tower with rounded steps in pink and beige tones.">
-						</picture>
-					</div>
+					<picture class="contacts__girl-foto">
+						<source srcset="img/portfolio_work_brunette-girl-2x.webp 2x" type="image/webp">
+						<img src="img/portfolio_work_brunette-girl.webp"
+							alt="The image shows a close-up of part of what looks like a tower with rounded steps in pink and beige tones.">
+					</picture>
 				</div>
 			</section>
 			<!-- EVENTS -->
@@ -173,16 +172,13 @@
 					<div class="events__parts">
 						<article class="events__part">
 							<div class="events__header-events">
-								<div class="events__date">
-									<p class="events__number">
-										<time datetime="2021-11-03">3</time>
-									</p>
-									<p class="events__month"><time datetime="2021-11-03">November</time>
-										2021</p>
-								</div>
-								<p class="events__time">
+								<time class="events__date" datetime="2021-11-03">
+									<span class="events__number">3</span>
+									<span class="events__month">November 2021</span>
+								</time>
+								<div class="events__time">
 									<time datetime="2021-11-03T9:00:00+03:00/2021-11-03T15:00:00+03:00">9:00 am – 3:00 pm</time>
-								</p>
+								</div>
 							</div>
 							<div class="events__body-events">
 								<h4 class="events__name name">Design Weeks</h4>
@@ -193,16 +189,13 @@
 						</article>
 						<article class="events__part">
 							<div class="events__header-events">
-								<div class="events__date">
-									<p class="events__number">
-										<time datetime="2021-11-15">15</time>
-									</p>
-									<p class="events__month"><time datetime="2021-11-15">November 2021</time>
-									</p>
-								</div>
-								<p class="events__time">
+								<time class="events__date" datetime="2021-11-15">
+									<span class="events__number">15</span>
+									<span class="events__month">November 2021</span>
+								</time>
+								<div class="events__time">
 									<time datetime="2021-11-15T13:00:00+03:00/2021-11-15T20:00:00+03:00">1:00 pm – 8:00 pm</time>
-								</p>
+								</div>
 							</div>
 							<div class="events__body-events">
 								<h4 class="events__name name">Interior Design</h4>
@@ -213,17 +206,14 @@
 						</article>
 						<article class="events__part">
 							<div class="events__header-events">
-								<div class="events__date">
-									<p class="events__number">
-										<time datetime="2021-12-02">2</time>
-									</p>
-									<p class="events__month"><time datetime="2021-12-02">December 2021</time>
-									</p>
-								</div>
-								<p class="events__time">
+								<time class="events__date" datetime="2021-12-02">
+									<span class="events__number">2</span>
+									<span class="events__month">December 2021</span>
+								</time>
+								<div class="events__time">
 									<time datetime="2021-12-02T10:00:00+03:00/2021-12-02T14:00:00+03:00">10:00 am – 2:00
 										pm</time>
-								</p>
+								</div>
 							</div>
 							<div class="events__body-events">
 								<h4 class="events__name name">The F design events</h4>
@@ -251,31 +241,40 @@
 						</div>
 					</div>
 					<div class="team__fotos">
-						<figure class="team__foto foto">
-							<img src="img/portfolio_work_guy-hat.webp"
-								alt="Selfie of handsome smiling guy in black hat and t-shirt.">
+						<figure>
+							<div class="team__foto foto">
+								<img src="img/portfolio_work_guy-hat.webp"
+									alt="Selfie of handsome smiling guy in black hat and t-shirt.">
+							</div>
 							<figcaption class="foto__body-subtext">
 								<h4 class="foto__name name">Azah Anyeni</h4>
 								<p class="foto__description description">Designer</p>
 							</figcaption>
 						</figure>
-						<figure class="team__foto foto">
-							<img src="img/portfolio_work_dark-guy.webp" alt="Selfie of dark guy in striped red blue sweater.">
+						<figure>
+							<div class="team__foto foto">
+								<img src="img/portfolio_work_dark-guy.webp"
+									alt="Selfie of dark guy in striped red blue sweater.">
+							</div>
 							<figcaption class="foto__body-subtext">
 								<h4 class="foto__name name">Roelof Bekkenenks</h4>
 								<p class="foto__description description">React Developer</p>
 							</figcaption>
 						</figure>
-						<figure class="team__foto foto">
-							<img src="img/portfolio_work_smile-girl.webp"
-								alt="Selfie of brunette girl with long hair nice appearance in beige blouse with short sleeves.">
+						<figure>
+							<div class="team__foto foto">
+								<img src="img/portfolio_work_smile-girl.webp"
+									alt="Selfie of brunette girl with long hair nice appearance in beige blouse with short sleeves.">
+							</div>
 							<figcaption class="foto__body-subtext">
 								<h4 class="foto__name name">Leonardo Oliveira</h4>
 								<p class="foto__description description">Illustrator</p>
 							</figcaption>
 						</figure>
-						<figure class="team__foto foto">
-							<img src="img/portfolio_work_blonde-girl.webp" alt="Selfie blonde in black blouse.">
+						<figure>
+							<div class="team__foto foto">
+								<img src="img/portfolio_work_blonde-girl.webp" alt="Selfie blonde in black blouse.">
+							</div>
 							<figcaption class="foto__body-subtext">
 								<h4 class="foto__name name">Izabella Tabakova</h4>
 								<p class="foto__description description">Product Designer</p>
@@ -296,9 +295,9 @@
 			<section class="founder">
 				<div class="founder__container">
 					<div class="founder__image">
-						<picture>
+						<picture class="founder__image">
 							<source srcset="img/portfolio_work_main-guy-glasses-2x.webp 2x" type="image/webp">
-							<img class="founder__item-img" src="img/portfolio_work_main-guy-glasses.webp"
+							<img src="img/portfolio_work_main-guy-glasses.webp"
 								alt="Selfie of a young smiling brunette in glasses on a gray-blue translucent background in a denim gray shirt and a white T-shirt with an inscription underneath.">
 						</picture>
 					</div>
@@ -338,9 +337,11 @@
 									can provide your business with a variety of digital solutions to promote your product or
 									service online and help you.</p>
 								<figure>
-									<img src="img/portfolio_testimonials-1.png"
-										alt="A man in sunglasses and a striped shirt stands confidently, exuding a relaxed and stylish demeanor.">
-									<figcaption>
+									<div class="rewiew__image">
+										<img src="img/portfolio_testimonials-1.png"
+											alt="A man in sunglasses and a striped shirt stands confidently, exuding a relaxed and stylish demeanor.">
+									</div>
+									<figcaption class="rewiew__name">
 										<cite>Alan Martí</cite>
 										<div class="rewiew__company-name">Meta Inc.</div>
 									</figcaption>
@@ -359,9 +360,11 @@
 								<p>Provide your business with a variety of digital solutions to promote your product or service
 									online.</p>
 								<figure>
-									<img src="img/portfolio_testimonials-2.png"
-										alt="A man wearing glasses and a white shirt sits against a vibrant graffiti wall, showcasing urban art and style.">
-									<figcaption>
+									<div class="rewiew__image">
+										<img src="img/portfolio_testimonials-2.png"
+											alt="A man wearing glasses and a white shirt sits against a vibrant graffiti wall, showcasing urban art and style.">
+									</div>
+									<figcaption class="rewiew__name">
 										<cite>Richardo Kann</cite>
 										<div class="rewiew__company-name">Photogram</div>
 									</figcaption>
@@ -380,9 +383,11 @@
 								<p>Outsource your digital marketing efforts, instead of handling in-house. They can provide your
 									business with a variety.</p>
 								<figure>
-									<img src="img/portfolio_testimonials-3.png"
-										alt="A smiling man with dreadlocks stands confidently in an urban setting, showcasing a vibrant city backdrop.">
-									<figcaption>
+									<div class="rewiew__image">
+										<img src="img/portfolio_testimonials-3.png"
+											alt="A smiling man with dreadlocks stands confidently in an urban setting, showcasing a vibrant city backdrop.">
+									</div>
+									<figcaption class="rewiew__name">
 										<cite>Graham Griffiths</cite>
 										<div class="rewiew__company-name">Twitor</div>
 									</figcaption>
@@ -401,9 +406,11 @@
 								<p>Promote your product or service online and help you hit your marketing goals and grow your
 									business.</p>
 								<figure>
-									<img src="img/portfolio_testimonials-4.png"
-										alt="A woman with long blonde hair and striking blue eyes, exuding elegance and confidence in her appearance.">
-									<figcaption>
+									<div class="rewiew__image">
+										<img src="img/portfolio_testimonials-4.png"
+											alt="A woman with long blonde hair and striking blue eyes, exuding elegance and confidence in her appearance.">
+									</div>
+									<figcaption class="rewiew__name">
 										<cite>Maria Trofimova</cite>
 										<div class="rewiew__company-name">Whochat</div>
 									</figcaption>
@@ -418,27 +425,27 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__top">
-					<h4 class="footer__page-title page-title">Agency</h4>
+					<a class="footer__page-title page-title" href="#">Agency</a>
 					<ul class="footer__menu menu-footer">
-						<li class="menu-footer__link">About</li>
-						<li class="menu-footer__link">Services</li>
-						<li class="menu-footer__link">Blog</li>
-						<li class="menu-footer__link">Contact</li>
+						<li class="menu-footer__link"><a href="#">About</a></li>
+						<li class="menu-footer__link"><a href="#">Services</a></li>
+						<li class="menu-footer__link"><a href="#">Blog</a></li>
+						<li class="menu-footer__link"><a href="#">Contact</a></li>
 					</ul>
 					<ul class="footer__service service-footer">
-						<li class="service-footer__link">About</li>
-						<li class="service-footer__link">Services</li>
-						<li class="service-footer__link">Blog</li>
-						<li class="service-footer__link">Contact</li>
+						<li class="menu-footer__link"><a href="#">Design</a></li>
+						<li class="menu-footer__link"><a href="#">Development</a></li>
+						<li class="menu-footer__link"><a href="#">Marketing</a></li>
+						<li class="menu-footer__link"><a href="#">See More</a></li>
 					</ul>
 					<div class="footer__socials">
-						<a href="#" class="footer__icon footer__icon--facebook">
+						<a href="#" class="footer__icon footer__icon--facebook" aria-label="go to facebook profile">
 							<img src="img/portfolio_footer-facebook-icon.svg" alt="Facebook icon from social networks.">
 						</a>
-						<a href="#" class="footer__icon footer__icon--twitter">
+						<a href="#" class="footer__icon footer__icon--twitter" aria-label="go to twitter profile">
 							<img src="img/portfolio_footer-twitter-icon.svg" alt="Twitter icon from social networks.">
 						</a>
-						<a href="#" class="footer__icon footer__icon--instagram">
+						<a href="#" class="footer__icon footer__icon--instagram" aria-label="go to facebook profile">
 							<img src="img/portfolio_footer-instagram-icon.svg" alt="instagram icon from social networks.">
 						</a>
 					</div>
