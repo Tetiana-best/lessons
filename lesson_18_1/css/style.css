@@ -167,7 +167,7 @@ body {
 }
 .button--menu-hover,
 .button--top-page-hover,
-.button--powerful-bottom-hover,
+.button--e-mail-hover,
 .button--price-hover,
 .button--footer-hover {
 	transform: translateY(0px);
@@ -186,7 +186,7 @@ body {
 @media (any-hover: hover) {
 	.button--menu-hover:hover,
 	.button--top-page-hover:hover,
-	.button--powerful-bottom-hover:hover,
+	.button--e-mail-hover:hover,
 	.button--price-hover:hover,
 	.button--footer-hover:hover {
 		transform: translateY(-2px);
@@ -582,6 +582,11 @@ body {
 .powerful-top__promo-head {
 	margin-block-end: 80px;
 }
+@media (max-width:991.98px) {
+.powerful-top__promo-head {
+		margin-block-end: 30px;
+	}
+}
 .promo-head {}
 .promo-head__title {}
 .title {
@@ -654,7 +659,7 @@ body {
 		flex-basis: 100%;
 	}
 }
-.visual--adaptive img{
+.visual img{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
@@ -662,132 +667,120 @@ body {
 
 /* ------LIGHT------ */
 
-.landing__light {
+.landing__block{}
+.block {}
+.block--light {
 	padding-block: 115.5px 111px;
 }
 @media (max-width:991.98px) {
-	.landing__light {
+	.block--light {
 		padding-block: 60px 60px;
 	}
 }
-.light {}
-.light__container {
+.block__container {
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
 
 }
 @media (max-width:675px){
-	.light__container {
-				flex-wrap: wrap;
-				flex-direction: column-reverse;
+	.block__container {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
 		}
 }
-.light__visual {
+.visual--light-width {
 	flex-basis: 42.0315%; /* 480/1142 */
 	aspect-ratio: 480 / 315.85;
 }
-.light__promo-head {
-	padding-block-start: 48px;
-}
-.promo-head{}
-.promo-head--width{
+.promo-head {
 	flex-basis: 445px;
 }
 @media (max-width:675px){
-	.promo-head--width {
+	.promo-head {
 			flex-basis: 100%;
 		}
 }
-.light__title {}
-.light__text {}
-.title--margin{
+.promo-head--light {
+	padding-block-start: 48px;
+}
+.block__title {
 	margin-block-end: 16px;
 }
+.block__text {}
 
 /* -------FAST------- */
-
-.landing__fast {
-	padding: 111px 0 116px;
+.landing__block{}
+.block{}
+.block--fast {
+	padding-block: 111px 116px;
 }
 @media (max-width:991.98px) {
-	.landing__fast {
+	.block--fast {
 		padding-block: 60px 60px;
 	}
 }
-.fast {}
-.fast__container {
-	display: flex;
-	justify-content: space-between;
-	gap: 30px;
-}
-@media (max-width:675px) {
-	.fast__container {
-		flex-wrap: wrap;
-		flex-direction: column-reverse;
-	}
-}
-.fast__visual {
+.block__container {}
+.block__visual{}
+.visual{}
+.visual--fast-width {
 	flex-basis: 47.2855%; /* 540/1142 */
 	aspect-ratio: 540 / 387;
 }
-.fast__promo-head {}
+.block__promo-head {}
+.promo-head{}
+.promo-head--fast{
+	padding-block-start: 80.24px;
+}
+.block__title {}
+.block__text {}
 
-.fast__title {}
-
-.fast__text {}
-
-/* ------POWERFUL BOTTOM------ */
-
-.landing__powerful-bottom {
+/* ------E-Mail------ */
+.landing__block{}
+.block{}
+.block--e-mail {
 	padding-block: 116px 188px;
 }
 @media (max-width:991.98px) {
-	.landing__powerful-bottom {
+	.block--e-mail {
 		padding-block: 60px 70px;
 	}
 }
-.powerful-bottom {}
-
-.powerful-bottom__container {
-	display: flex;
-	justify-content: space-between;
-	gap: 30px;
-}
-@media (max-width:675px) {
-	.powerful-bottom__container {
-		flex-wrap: wrap;
-		flex-direction: column-reverse;
-	}
-}
-.powerful-bottom__visual {
+.block__container {}
+.block__visual{}
+.visual{}
+.visual--bottom-width {
 	flex-basis: 38.9667%; /* 445/1142 */
 	aspect-ratio: 445 / 312;
 }
-.powerful-bottom__promo-head {}
+.block__promo-head {}
 .promo-head {}
-.powerful-bottom__title {}
+.promo-head--e-mail{
+	padding-block-start: 2.07px;
+}
+.block__title {}
 .title {}
-.powerful-bottom__text {
+.block__text{}
+.text {}
+.text--e-mail {
 	margin-block-end: 40px;
 }
-.text {}
-.powerful-bottom__purchase {
+.block__purchase {
 	display: flex;
 	padding-block-end: 10px;
 }
-.powerful-bottom__button {
+.block__button {
 	flex-basis: 150px;
 	font-size: 14px;
 	line-height: 1.71429;
 }
 @media (max-width:675px) {
-	.powerful-bottom__button {
+	.block__button {
 		margin-inline: auto;
 	}
 }
 @media (max-width:479.98px) {
-	.powerful-bottom__button {
+	.block__button {
 		flex-basis: 100%;
 		font-size: 16px;
 	}
