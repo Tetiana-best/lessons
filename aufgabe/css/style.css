@@ -1,0 +1,26 @@
+
+@import url("reset.css");
+
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900"); */
+/* @import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700"); */
+/* @import url("https://fonts.googleapis.com/css?family=Caveat:regular,500,600,700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap"); */
+/* ------------------------------------------------------------------ */
+
+body {
+	background-color: #fff;
+	/* margin: 0;
+	padding: 0; */
+
+}
+.rectangle {
+	width: 4cm;
+	height: 3cm;
+	border: 1px solid #000;
+
+
+}
+
