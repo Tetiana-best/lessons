@@ -12,16 +12,14 @@
 
 body {
 	background-color: #fff;
-	/* margin: 0;
-	padding: 0; */
-
 }
 .rectangle {
 	width: 4cm;
 	height: 3cm;
 	border: 1px solid #000;
 
-	margin: 5cm 0 0 6cm;
+	margin-block-start: 189px;
+	margin-inline-start: 226.8px;
 
 
 }
