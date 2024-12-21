@@ -12,9 +12,8 @@
 
 body {
 	background-color: #fff;
-	margin: 0;
-	padding: 0;
-	position: relative;
+	/* margin: 0;
+	padding: 0; */
 
 }
 .rectangle {
@@ -22,8 +21,6 @@ body {
 	height: 3cm;
 	border: 1px solid #000;
 
-	position: absolute;
-	top: 5cm;
-	left: 6cm;
+	margin: 5cm 0 0 6cm;
 }
 
