@@ -1,0 +1,57 @@
+@import url("reset.css");
+
+@media print {
+	body {
+			
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		*{
+			page-break-before: auto;
+			page-break-after: auto;
+			page-break-inside: auto;
+		}
+			.content {
+				page-break-before: always;
+			}
+	}
+@media print {
+	.empty {
+			display: none;
+		}
+		.content:empty {
+			display: none;
+		}
+}
+@media print {
+	.page-end {
+		page-break-after: always;
+	}
+}
+.no-print{
+	display: none;
+}
+@page {
+	size: auto;
+	margin: 0;
+}
+
+/* ---------------- */
+@page {
+	size: A4;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+}
+.rectangle {
+	width: 4cm;
+	height: 3cm;
+	border: 1px solid #000;
+
+	margin: 5cm 0 0 6cm;
+}
+
+
