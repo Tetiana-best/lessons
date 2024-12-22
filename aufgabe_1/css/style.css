@@ -1,0 +1,27 @@
+ *,
+ *::before,
+ *::after {
+ 	padding: 0;
+ 	margin: 0;
+ 	border: none;
+
+ 	box-sizing: border-box;
+ }
+
+/* ---------------- */
+@page {
+	size: A4;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+}
+.rectangle {
+	width: 4cm;
+	height: 3cm;
+	border: 0.02646cm solid #000;
+	margin: 5cm 0 0 6cm;
+}
+
+
