@@ -44,7 +44,7 @@
 				<div class="header__action action-header">
 					<a href="#" class="action-header__button button button--menu">Contact</a>
 					<button class="action-header__icon icon-burger" type="button"
-						aria-label="open menu"><span></span></button>
+						aria-label="open/close menu"><span></span></button>
 				</div>
 			</div>
 		</header>
@@ -95,7 +95,7 @@
 							<div class="designer__body-visual">
 								<picture class="designer__visual visual">
 									<source
-										srcset="img/portfolio_designer-man-small.webp 2x, img/portfolio_designer-man-small.webp 3x"
+										srcset="img/portfolio_designer-man-small-2x.webp 2x, img/portfolio_designer-man-small-3x.webp 3x"
 										type="image/webp">
 									<img src="img/portfolio_designer-man-small.webp"
 										alt="A man in a suit stands confidently with his arms crossed, exuding professionalism and poise.">
@@ -229,7 +229,7 @@
 									<!-- <img src="img/portfolio_process-research-icon.svg" alt="White notepad icon"> -->
 								</div>
 								<h4 class="card-work__title">1. Research</h4>
-								<div class="card-work__text">
+								<div class="card-work__subtext subtext">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
 								</div>
 							</article>
@@ -244,7 +244,7 @@
 									<!-- <img src="img/portfolio_process-analyze-icon.svg" alt="Violet chart icon"> -->
 								</div>
 								<h4 class="card-work__title">2. Analyze</h4>
-								<div class="card-work__text">
+								<div class="card-work__subtext subtext">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
 								</div>
 							</article>
@@ -259,7 +259,7 @@
 									<!-- <img src="img/portfolio_process-design-icon.svg" alt="Violet pensil icon"> -->
 								</div>
 								<h4 class="card-work__title">3. Design</h4>
-								<div class="card-work__text">
+								<div class="card-work__subtext subtext">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
 								</div>
 							</article>
@@ -274,7 +274,7 @@
 									<!-- <img src="img/portfolio_process-launch-icon.svg" alt="Violet laptop icon"> -->
 								</div>
 								<h4 class="card-work__title">4. Launch</h4>
-								<div class="card-work__text">
+								<div class="card-work__subtext subtext">
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu.</p>
 								</div>
 							</article>
@@ -294,99 +294,115 @@
 						<div class="portfolio__cards cards">
 							<article class="cards__card card">
 								<figure class="card__body">
-									<a class="card__link" href="#"></a>
-									<img src="img/portfolio_case-1.webp"
-										alt="Abstract image with flowing swirls of red, pink, and white tones.">
+									<a class="card__link" href="#">
+										<img src="img/portfolio_case-1.webp"
+											alt="Abstract image with flowing swirls of red, pink, and white tones.">
+									</a>
 									<figcaption class="card__description">
 										<h5 class="card__label">UI-UX DESIGN</h5>
-										<h4 class="card__title">Product Admin Dashboard</h4>
-										<figcaption class="card__text">
+										<h4 class="card__title"><a href="#">Product Admin Dashboard</a></h4>
+										<div class="card__text">
 											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
 												imperdiet lacus.</p>
-										</figcaption>
-										</a>
+											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
+												imperdiet lacus.</p>
+											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
+												imperdiet lacus.</p>
+										</div>
+										<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
+											Study</a>
+									</figcaption>
 								</figure>
-								<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
-									Study</a>
 							</article>
 							<article class="cards__card card">
-								<div class="card__image">
-									<img src="img/portfolio_case-2.webp"
-										alt="A triangular building roof is set against a dark night sky with scattered small stars.">
-								</div>
-								<div class="card__description">
-									<h5 class="card__label">UI-UX DESIGN</h5>
-									<h4 class="card__title">Product Admin Dashboard</h4>
-									<div class="card__text">
-										<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
-											imperdiet lacus.</p>
-									</div>
-									<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
-										Study</a>
-								</div>
+								<figure class="card__body">
+									<a class="card__link" href="#">
+										<img src="img/portfolio_case-2.webp"
+											alt="A triangular building roof is set against a dark night sky with scattered small stars.">
+									</a>
+									<figcaption class="card__description">
+										<h5 class="card__label">UI-UX DESIGN</h5>
+										<h4 class="card__title"><a href="#">Product Admin Dashboard</a></h4>
+										<div class="card__text">
+											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
+												imperdiet lacus.</p>
+										</div>
+										<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
+											Study</a>
+									</figcaption>
+								</figure>
 							</article>
 							<article class="cards__card card">
-								<div class="card__image">
-									<img src="img/portfolio_case-3.webp"
-										alt="Laptop displaying code on a desk with a smartphone, headphones, and a lamp in a modern, well-lit workspace.">
-								</div>
-								<div class="card__description">
-									<h5 class="card__label">UI-UX DESIGN</h5>
-									<h4 class="card__title">Product Admin Dashboard</h4>
-									<div class="card__text">
-										<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
-											imperdiet lacus.</p>
-									</div>
-									<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
-										Study</a>
-								</div>
+								<figure class="card__body">
+									<a class="card__link" href="#">
+										<img src="img/portfolio_case-3.webp"
+											alt="Laptop displaying code on a desk with a smartphone, headphones, and a lamp in a modern, well-lit workspace.">
+									</a>
+									<figcaption class="card__description">
+										<h5 class="card__label">UI-UX DESIGN</h5>
+										<h4 class="card__title"><a href="#">Product Admin Dashboard</a></h4>
+										<div class="card__text">
+											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
+												imperdiet lacus.</p>
+										</div>
+										<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
+											Study</a>
+									</figcaption>
+								</figure>
 							</article>
 							<article class="cards__card card">
-								<div class="card__image">
-									<img src="img/portfolio_case-4.webp" alt="">
-								</div>
-								<div class="card__description">
-									<h5 class="card__label">UI-UX DESIGN</h5>
-									<h4 class="card__title">Product Admin Dashboard</h4>
-									<div class="card__text">
-										<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
-											imperdiet lacus.</p>
-									</div>
-									<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
-										Study</a>
-								</div>
+								<figure class="card__body">
+									<a class="card__link" href="#">
+										<img src="img/portfolio_case-4.webp"
+											alt="Modern conference room with a long table, beige chairs, large windows, and a ceiling-mounted projector.">
+									</a>
+									<figcaption class="card__description">
+										<h5 class="card__label">UI-UX DESIGN</h5>
+										<h4 class="card__title"><a href="#">Product Admin Dashboard</a></h4>
+										<div class="card__text">
+											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
+												imperdiet lacus.</p>
+										</div>
+										<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
+											Study</a>
+									</figcaption>
+								</figure>
 							</article>
 							<article class="cards__card card">
-								<div class="card__image">
-									<img src="img/portfolio_case-5.webp"
-										alt="Plush avocado toy with a smiling face, brown pit, and small feet, set against a green and yellow background.">
-								</div>
-								<div class="card__description">
-									<h5 class="card__label">UI-UX DESIGN</h5>
-									<h4 class="card__title">Product Admin Dashboard</h4>
-									<div class="card__text">
-										<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
-											imperdiet lacus.</p>
-									</div>
-									<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
-										Study</a>
-								</div>
+								<figure class="card__body">
+									<a class="card__link" href="#">
+										<img src="img/portfolio_case-5.webp"
+											alt="Plush avocado toy with a smiling face, brown pit, and small feet, set against a green and yellow background.">
+									</a>
+									<figcaption class="card__description">
+										<h5 class="card__label">UI-UX DESIGN</h5>
+										<h4 class="card__title"><a href="#">Product Admin Dashboard</a></h4>
+										<div class="card__text">
+											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
+												imperdiet lacus.</p>
+										</div>
+										<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
+											Study</a>
+									</figcaption>
+								</figure>
 							</article>
 							<article class="cards__card card">
-								<div class="card__image">
-									<img src="img/portfolio_case-6.webp"
-										alt="Close-up of delicate lavender flowers with soft purple hues against a blurred, light gray background.">
-								</div>
-								<div class="card__description">
-									<h5 class="card__label">UI-UX DESIGN</h5>
-									<h4 class="card__title">Product Admin Dashboard</h4>
-									<div class="card__text">
-										<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
-											imperdiet lacus.</p>
-									</div>
-									<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
-										Study</a>
-								</div>
+								<figure class="card__body">
+									<a class="card__link" href="#">
+										<img src="img/portfolio_case-6.webp"
+											alt="Close-up of delicate lavender flowers with soft purple hues against a blurred, light gray background.">
+									</a>
+									<figcaption class="card__description">
+										<h5 class="card__label">UI-UX DESIGN</h5>
+										<h4 class="card__title"><a href="#">Product Admin Dashboard</a></h4>
+										<div class="card__text">
+											<p>Vivamus eleifend convallis ante, non pharetra libero molestie laoreet. Donec id
+												imperdiet lacus.</p>
+										</div>
+										<a href="#" class="card__outline-button outline-button outline-button--mobil">Case
+											Study</a>
+									</figcaption>
+								</figure>
 							</article>
 						</div>
 						<a href="#" class="portfolio__button button button--mobil">My Project</a>
@@ -415,93 +431,144 @@
 							</div>
 						</div>
 						<div class="blog__cards cards">
-							<article class="cards__card card">
-								<div class="card__image card__image--size">
-									<img src="img/portfolio_blog-1.webp"
-										alt="Abstract image with flowing swirls of red, pink, and white tones.">
-								</div>
-								<div class="card__description card__description--padding">
-									<div class="card__date">
-										<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
-										<span class="card__label label">/ 246 Comments</span>
-									</div>
-									<h4 class="card__title card__title--font-weigh">Lorem ipsum dolor sit consea. Nulla purus
-										arcu</h4>
-								</div>
+							<article class="cards__card card card--scroll">
+								<figure class="card__body">
+									<a class="card__link card__link--size" href="#">
+										<picture class="hero__visual visual">
+											<source srcset="img/portfolio_blog-1.webp 2x" type="image/webp">
+											<img src="img/portfolio_blog-1.webp"
+												alt="Abstract image with flowing swirls of red, pink, and white tones.">
+										</picture>
+									</a>
+									<figcaption class="card__description card__description--padding">
+										<div class="card__date">
+											<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
+											<span class="card__label label">/ 246 Comments</span>
+										</div>
+										<h4 class="card__title card__title--font-weigh"><a href="#">Lorem ipsum dolor sit consea.
+												Nulla purus
+												arcu</a></h4>
+									</figcaption>
+								</figure>
 							</article>
-							<article class="cards__card card">
-								<div class="card__image card__image--size">
-									<img src="img/portfolio_blog-2.webp"
-										alt="Abstract image with flowing swirls of red, pink, and white tones.">
-								</div>
-								<div class="card__description card__description--padding">
-									<div class="card__date">
-										<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
-										<span class="card__label label">/ 246 Comments</span>
-									</div>
-									<h4 class="card__title card__title--font-weigh">Lorem ipsum dolor sit consea. Nulla purus
-										arcu</h4>
-								</div>
+							<article class="cards__card card card--scroll">
+								<figure class="card__body">
+									<a class="card__link card__link--size" href="#">
+										<picture class="hero__visual visual">
+											<source srcset="img/portfolio_blog-2.webp 2x" type="image/webp">
+											<img src="img/portfolio_blog-2.webp"
+												alt="Abstract image with flowing swirls of red, pink, and white tones.">
+										</picture>
+									</a>
+									<figcaption class="card__description card__description--padding">
+										<div class="card__date">
+											<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
+											<span class="card__label label">/ 246 Comments</span>
+										</div>
+										<h4 class="card__title card__title--font-weigh"><a href="#">Lorem ipsum dolor sit consea.
+												Nulla purus
+												arcu</a></h4>
+									</figcaption>
+								</figure>
 							</article>
-							<article class="cards__card card">
-								<div class="card__image card__image--size">
-									<img src="img/portfolio_blog-3.webp"
-										alt="Abstract image with flowing swirls of red, pink, and white tones.">
-								</div>
-								<div class="card__description card__description--padding">
-									<div class="card__date">
-										<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
-										<span class="card__label label">/ 246 Comments</span>
-									</div>
-									<h4 class="card__title card__title--font-weigh">Lorem ipsum dolor sit consea. Nulla purus
-										arcu</h4>
-								</div>
+							<article class="cards__card card card--scroll">
+								<figure class="card__body">
+									<a class="card__link card__link--size" href="#">
+										<picture class="hero__visual visual">
+											<source srcset="img/portfolio_blog-3.webp 2x" type="image/webp">
+											<img src="img/portfolio_blog-3.webp"
+												alt="Abstract image with flowing swirls of red, pink, and white tones.">
+										</picture>
+									</a>
+									<figcaption class="card__description card__description--padding">
+										<div class="card__date">
+											<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
+											<span class="card__label label">/ 246 Comments</span>
+										</div>
+										<h4 class="card__title card__title--font-weigh"><a href="#">Lorem ipsum dolor sit consea.
+												Nulla purus
+												arcu</a></h4>
+									</figcaption>
+								</figure>
 							</article>
-							<article class="cards__card card">
-								<div class="card__image card__image--size">
-									<img src="img/portfolio_blog-4.webp"
-										alt="Abstract image with flowing swirls of red, pink, and white tones.">
-								</div>
-								<div class="card__description card__description--padding">
-									<div class="card__date">
-										<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
-										<span class="card__label label">/ 246 Comments</span>
-									</div>
-									<h4 class="card__title card__title--font-weigh">Lorem ipsum dolor sit consea. Nulla purus
-										arcu</h4>
-								</div>
+							<article class="cards__card card card--scroll">
+								<figure class="card__body">
+									<a class="card__link card__link--size" href="#">
+										<picture class="hero__visual visual">
+											<source srcset="img/portfolio_blog-4.webp 2x" type="image/webp">
+											<img src="img/portfolio_blog-4.webp"
+												alt="Abstract image with flowing swirls of red, pink, and white tones.">
+										</picture>
+									</a>
+									<figcaption class="card__description card__description--padding">
+										<div class="card__date">
+											<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
+											<span class="card__label label">/ 246 Comments</span>
+										</div>
+										<h4 class="card__title card__title--font-weigh"><a href="#">Lorem ipsum dolor sit consea.
+												Nulla purus
+												arcu
+												Lorem ipsum dolor sit consea.
+												Nulla purus
+												arcu
+												Lorem ipsum dolor sit consea.
+												Nulla purus
+												arcu</a></h4>
+									</figcaption>
+								</figure>
 							</article>
-							<article class="cards__card card">
-								<div class="card__image card__image--size">
-									<img src="img/portfolio_blog-4.webp"
-										alt="Abstract image with flowing swirls of red, pink, and white tones.">
-								</div>
-								<div class="card__description card__description--padding">
-									<div class="card__date">
-										<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
-										<span class="card__label label">/ 246 Comments</span>
-									</div>
-									<h4 class="card__title card__title--font-weigh">Lorem ipsum dolor sit consea. Nulla purus
-										arcu</h4>
-								</div>
-							</article>
-							<article class="cards__card card">
-								<div class="card__image card__image--size">
-									<img src="img/portfolio_blog-4.webp"
-										alt="Abstract image with flowing swirls of red, pink, and white tones.">
-								</div>
-								<div class="card__description card__description--padding">
-									<div class="card__date">
-										<time datetime="2020-10-22" class="card__label label">22 Oct, 2020</time>
-										<span class="card__label label">/ 246 Comments</span>
-									</div>
-									<h4 class="card__title card__title--font-weigh">Lorem ipsum dolor sit consea. Nulla purus
-										arcu</h4>
-								</div>
-							</article>
-
 						</div>
-						<a href="#" class="blog__button button button--mobil">My Project</a>
+						<div class="blog__slider slider">
+							<button class="slider__item active" aria-label="switch to next slide"></button>
+							<button class="slider__item" aria-label="switch to next slide"></button>
+							<button class="slider__item" aria-label="switch to next slide"></button>
+						</div>
+					</div>
+				</section>
+				<!-- I-DO -->
+				<section class="i-do">
+					<div class="i-do__container">
+						<div class="i-do-promo">
+							<div class="i-do__head-promo head-promo">
+								<h3 class="head-promo__title title">What I do?</h3>
+								<div class="head-promo__text text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget
+										velit
+										non, laoreet imperdiet
+										orci. Mauris ultrices eget lorem ac vestibulum. Suspendis imperdiet,</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget
+										velit
+										non.</p>
+								</div>
+							</div>
+							<a href="#" class="i-do__button button button--mobil">Say Hello!</a>
+						</div>
+						<div class="i-do__details-block details-block">
+							<div class="details-block__item">
+								<h5 class="details-block__title">User Experience (UX)</h5>
+								<div class="details-block__subtext subtext subtext--family-color">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget
+										velit non, laoreet imperdiet
+										orci. Mauris ultrices eget lorem ac vestibulum.</p>
+								</div>
+							</div>
+							<div class="details-block__item">
+								<h5 class="details-block__title">User Interface (UI)</h5>
+								<div class="details-block__subtext subtext subtext--family-color">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget
+										velit non, laoreet imperdiet
+										orci. Mauris ultrices eget lorem ac vestibulum.</p>
+								</div>
+							</div>
+							<div class="details-block__item">
+								<h5 class="details-block__title">Web Development</h5>
+								<div class="details-block__subtext subtext subtext--family-color">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus arcu, varius eget
+										velit non, laoreet imperdiet
+										orci. Mauris ultrices eget lorem ac vestibulum.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 			</div>
