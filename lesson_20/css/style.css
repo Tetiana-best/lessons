@@ -482,12 +482,12 @@ body {
 	text-align: center;
 	flex-wrap: wrap;
 }
-@media (max-width:57.25em){
+/* @media (max-width:57.25em){
 	.hero__achievements {
 			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
 		}
-}
+} */
 .hero__achievement-item {}
 .achievement-item {
 	border-radius: 0.375rem;
@@ -509,6 +509,13 @@ body {
 }
 .achievement-item:nth-child(3n+3) {
 	flex-basis: 32.0988%; /* 208/648 */
+}
+@media (max-width:57.25em){
+	.achievement-item:nth-child(3n+1),
+	.achievement-item:nth-child(3n+2),
+	.achievement-item:nth-child(3n+3) {
+			flex-basis: 100%;
+		}
 }
 .achievement-item__count {
 	color: #424E60;
@@ -615,6 +622,20 @@ body {
 .designer__socials {
 	transform: translateY(-50%);
 }
+.socials__item{
+	border: 1px solid transparent;
+	border-radius: 6px;
+	
+	transition: border 0.3s, border-radius 0.3s;
+}
+@media (any-hover: hover) {
+	.socials__item:hover {
+		border: 1px solid var(--btn-primary);
+		border-radius: 0.25rem;
+
+		transition: border 0.5s, border-radius 0.5s;
+	}
+}
 .socials {
 	padding: 0.75rem; /* 12/16 */
 	border-radius: 0.25rem; /* 4/16 */
@@ -643,15 +664,7 @@ body {
 	object-fit: cover;
 }
 .soc-icon--behance {}
-@media (any-hover: hover) {
-	.socials__soc-icon:hover,
-	.socials__soc-icon:hover svg path {
-		background-color: var(--btn-primary);
-		fill: #fff;
 
-		transition: background-color 0.5s, fill 0.5s;
-	}
-}
 .designer__promo {
 	padding-block-start: 4.875rem; /* 78/16 */
 
@@ -835,13 +848,23 @@ padding-block-end: 0.9375rem; /* 15/16 */
 	margin-block-end: 24px;
 }
 }
+
 .card-work{
 		padding: 32px;
 		border-radius: 12px;
 		background-color: #fff;
 		box-shadow: 32px 32px 124px 0px rgba(43, 56, 76, 0.10);
 }
+ol {
+	counter-reset: list-counter;
+}
 
+ol li h4::before {
+	counter-increment: list-counter;
+	content: counter(list-counter)". ";
+	display: inline-block;
+	margin-right: 9px;
+}
 .card-work__icon {
 	height: 4.5rem;
 	display: inline-block;
@@ -912,9 +935,6 @@ padding-block-end: 0.9375rem; /* 15/16 */
 	row-gap: 32px;
 }
 .cards__card {
-	display: flex;
-	flex-direction: column;
-
 	box-shadow: 0px 0px 0px 0px transparent;
 	transition: box-shadow 0.3s;
 }
@@ -926,7 +946,10 @@ padding-block-end: 0.9375rem; /* 15/16 */
 	}
 }
 
-.card__body{}
+.card__body{
+	display: flex;
+	flex-direction: column;
+}
 .card__link {
 	aspect-ratio: 424 / 248;
 	width: 100%;
