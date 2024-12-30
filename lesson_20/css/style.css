@@ -1336,6 +1336,7 @@ ol li h4::before {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+	overflow: hidden;
 }
 /* ----------FOOTER------------ */
 
