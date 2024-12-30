@@ -644,25 +644,43 @@ body {
 	box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
 	
 	display: inline-flex;
-	align-items: center;
+
 }
 .socials__soc-icon {}
 .soc-icon {
 	padding: 0.9375rem; /* 15/16 */
 	border-radius: 0.25rem; /* 4/16 */
+	align-self: center;
+	justify-self: center;
 	
 	width: 48px;
 	height: 48px;
 	/* flex: 0 0 3rem; */
 	background-color: transparent;
-	fill: transparent;
 	
-	transition: background-color 0.3s, fill 0.3s;
+	transition: background-color 0.3s;
 }
+@media (any-hover: hover) {
+	.soc-icon:hover {
+		background-color: var(--btn-primary);
+		transition: background-color 0.6s;
+	}
+}
+
 .soc-icon img{
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: content;
+
+	filter: brightness(none) invert(none);
+	transition: filter 0.3s;
+	
+}
+@media (any-hover: hover) {
+	.socials__item:hover .socials__soc-icon img {
+		filter: brightness(0) invert(1);
+		transition: filter 0.6s;
+	}
 }
 .soc-icon--behance {}
 
@@ -867,28 +885,41 @@ ol li h4::before {
 	margin-right: 9px;
 }
 .card-work__icon {
-	height: 4.5rem;
+	height: 72px;
 	display: inline-block;
 	padding: 20px;
 	border-radius: 6px;
 	background-color: rgba(237, 216, 255, 0.50);
-	fill: #000;
-	transform: translateY(0);
 
 	margin-block-end: 32px;
 
-	transition: background-color 0.3s, transform 0.3s, fill 0.3s;
-}
+	transform: translateY(0);
 
-@media (any-hover: hover) {
-	.card-work__icon:hover,
-	.card-work__icon:hover svg path {
-		background-color: var(--btn-primary);
-		fill: white;
-		transform: translateY(-1px);
-		transition: background-color 0.5s, transform 0.5s, fill 0.4s;
-	}
+	transition: background-color 0.3s, transform 0.3s;
 }
+	@media (any-hover: hover) {
+		.card-work__icon:hover {
+			transform: translateY(-1px);
+			background-color: var(--btn-primary);
+
+			transition: background-color 0.6s, transform 0.6s;
+		}
+}
+.card-work__icon img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+	filter: brightness(none) invert(none);
+	/* filter: invert(21%) sepia(100%) saturate(850%) hue-rotate(260deg) brightness(105%); */
+}
+	@media (any-hover: hover) {
+		.work__card:hover .card-work__icon img {
+			filter: brightness(0) invert(1);
+			transform: translateY(-1px);
+			transition: filter 0.6s, transform 0.5s;
+		}
+	}
 .card-work__title {
 	font-size: 20px;
 	font-weight: 600;
@@ -1287,7 +1318,7 @@ ol li h4::before {
 
 /* ------CLIENTS-------- */
 .clients {
-	padding-block: 100px;
+	padding-block: 100px 50px;
 }
 @media (max-width: 1199.98px){
 	.clients {
@@ -1314,19 +1345,23 @@ ol li h4::before {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	padding-block: 70px;
 }
 .clients__name {
 	flex: 0 0 15.1515%; /* 200/1320 */
-	min-height: 12.5rem;
-	aspect-ratio: 200 / 200;
+	aspect-ratio: 200 / 50;
 	padding: 1px 30px;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	transform: scale(1);
+	
+	transition: transform 0.3s;
 }
-@media (max-width: 767.98px){
+@media (max-width: 1199.98px){
 	.clients__name {
 			min-height: 4.375rem;
 			aspect-ratio: 200 / 70;
@@ -1334,10 +1369,72 @@ ol li h4::before {
 }
 .clients__name img{
 	width: 100%;
-	height: auto;
-	object-fit: cover;
-	overflow: hidden;
+	height: 100%;
+	object-fit: contain;
+	/* overflow: hidden; */
 }
+@media (any-hover: hover){
+	.clients__name:hover{
+		transform: scale(1.1);
+
+		transition: transform 0.6s;
+	}
+}
+/* ----TESTOMONIAL----- */
+.testimonial {
+	padding-block: 50px;
+}
+.testimonial__container {
+	text-align: center;
+}
+.testimonial__head-promo {}
+.head-promo {}
+.head-promo__title {}
+.title {}
+.title--color {}
+.text--testimonial{
+	max-width: 577px;
+	margin-inline: auto;
+	margin-block-end: 70px;
+}
+.head-promo__text {}
+.text {}
+
+.testimonial__blockquote {
+	max-width: 872px;
+	margin-inline: auto;
+}
+.testimonial__blockquote p{
+	color: #2B384C;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.33333;
+
+	margin-block-end: 24px;
+}
+.author p{
+	color: #000;
+	font-family: Poppins;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.44444;
+
+}
+.position p{
+	color: #000;
+	font-family: Poppins;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.testimonial__slider {}
+
+.slider {}
+
+.slider__item {}
+
+.active {}
+
 /* ----------FOOTER------------ */
 
 
