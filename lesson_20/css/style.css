@@ -36,6 +36,7 @@ body {
 }
 [class*="__title"] {
 	color: #132238;
+	font-weight: 600;
 }
 
 /* -----HEADER------ */
@@ -911,12 +912,18 @@ ol li h4::before {
 }
 .portfolio__head-promo {
 	max-width: 577px;
+	margin-block-end: 70px;
 }
-.head-promo__title {}
-.title {}
+.head-promo__title {
+	margin-block-end: 24px;
+}
+.title {
+	font-family: "Work-Sans", serif;
+	line-height: 1.16667;
+}
 .head-promo__text {
 	color: #87909D;
-	margin-block-end: 70px;
+	line-height: 1.33333;
 }
 .text {}
 
@@ -945,10 +952,14 @@ ol li h4::before {
 		transition: box-shadow 0.6s;
 	}
 }
-
+.card__article{
+	height: 100%;
+}
 .card__body{
 	display: flex;
 	flex-direction: column;
+
+	height: 100%;
 }
 .card__link {
 	aspect-ratio: 424 / 248;
@@ -1035,13 +1046,11 @@ ol li h4::before {
 	text-align: center;
 }
 .discuss-project__title {
+	color: #FFF;
 	font-size: clamp(1.75rem, 1.35rem + 2vw, 3rem);/* 48>28 1320>320 */
 	margin-block-end: 2rem;
 }
 .title {}
-.title--color {
-	color: #FFF;
-}
 .discuss-project__text {
 	max-width: 36.3125rem;
 	margin-block-end: 2rem;
@@ -1103,19 +1112,21 @@ ol li h4::before {
 }
 .blog__head-promo {
 	max-width: 540px;
+
+	margin-block-end: 70px;
 }
 .head-promo {}
-.head-promo__title {
+.head-promo__title{}
+.title--blog {
 	font-family: "Poppins", serif;
-
-	margin-block-end: 24px;
 }
 .title {}
-.head-promo__text {
+.head-promo__text {}
+.text {}
+.text--blog{
 	font-family: "Public Sans", serif;
 	line-height: 1.44444;
 }
-.text {}
 .blog__cards {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(312px, 1fr));
@@ -1150,9 +1161,7 @@ ol li h4::before {
 	margin-block-end: 8px;
 }
 .card__label {}
-.card__title {
-	flex-grow: 1;
-}
+.card__title {}
 .card__title--font-weigh{
 	font-weight: 500;
 }
@@ -1186,44 +1195,148 @@ ol li h4::before {
 /* -----I DO------- */
 .i-do {
 	background-color: #F0F1F3;
-	padding: 150px 300px;
+	padding-block: 150px;
 }
-
-.i-do__container {}
-
-.i-do-promo {}
-
-.i-do__head-promo {}
-
+@media (max-width: 1199.98px) {
+	.i-do {
+		padding-block: 80px;
+	}
+}
+.i-do__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	gap: 15px;
+}
+@media (max-width: 767.98px){
+	.i-do__container {
+			flex-wrap: wrap;
+		}
+}
+.i-do-promo {
+	flex: 0 1 40.0758%;
+	 /* 529/1320 */
+	
+}
+.i-do__head-promo {
+	margin-block-end: 50px;
+	text-align: start;
+}
 .head-promo {}
-
 .head-promo__title {}
-
 .title {}
-
+.title--color{
+	color: #333;
+}
 .head-promo__text {}
 
 .text {}
-
-.i-do__button {}
+.text--margin p:not(:last-child){
+	margin-block-end: 16px;
+}
+.i-do__button {
+	margin-block-end: 5px;
+}
 
 .button {}
 
 .button--mobil {}
 
-.i-do__details-block {}
+.i-do__details-block {
+	flex: 0 0 49.0909%; /* 648/1320 */
 
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+@media (max-width: 767px){
+	.i-do__details-block {
+			flex-grow: 1;
+}
+}
 .details-block {}
 
-.details-block__item {}
+.details-block__item {
+	padding: 32px;
+	border-radius: 6px;
+	background: #FFF;
+	box-shadow: 0px 32px 96px 0px rgba(28, 25, 25, 0.16);
 
-.details-block__title {}
+	border-left: 5px solid transparent;
+	transition: border-left 0.3s;
+}
+@media (any-hover: hover){
+	.details-block__item:hover{
+		border-left: 5px solid var(--btn-primary);
 
-.details-block__subtext {}
+		transition: border-left 0.5s;
+	}
+}
+.details-block__title {
+	font-size: 24px;
+	line-height: 1.0;
 
+	margin-block-end: 16px;
+}
+.details-block__subtext {
+	color: #424E60;
+	line-height: 1.33333;
+}
 .subtext {}
 
-.subtext--family-color {}
+/* ------CLIENTS-------- */
+.clients {
+	padding-block: 100px;
+}
+@media (max-width: 1199.98px){
+	.clients {
+			padding-block: 70px;
+		}
+}
+
+.clients__container {}
+
+.clients__head-promo {
+	max-width: 577px;
+
+	margin-block-end: 24px;
+}
+.head-promo {}
+.head-promo__title {}
+.title {}
+.head-promo__text {}
+.text {}
+.clients__names {
+	display: flex;
+	column-gap: 24px;
+	row-gap: 10px;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.clients__name {
+	flex: 0 0 15.1515%; /* 200/1320 */
+	min-height: 12.5rem;
+	aspect-ratio: 200 / 200;
+	padding: 1px 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width: 767.98px){
+	.clients__name {
+			min-height: 4.375rem;
+			aspect-ratio: 200 / 70;
+	}
+}
+.clients__name img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
 /* ----------FOOTER------------ */
 
 
