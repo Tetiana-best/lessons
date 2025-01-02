@@ -134,6 +134,8 @@ body {
 .menu__link {
 	font-weight: 500;
 	line-height: 1.5;
+
+	position: relative;
 }
 .menu__link::before,
 .footer__link::after {
