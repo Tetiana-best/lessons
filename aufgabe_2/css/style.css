@@ -371,6 +371,9 @@ tfoot td {
 		.footer__container::after {
 			width: 90%;
 		}
+		.footer {
+			font-size: clamp(0.438rem, 1.013vw + 0.235rem, 0.688rem);
+		}
 }
 @media (max-width: 610px){
 	.footer__area {
@@ -385,6 +388,7 @@ tfoot td {
 	.footer__bank-details{
 		flex: 1 1 100%;
 	}
+
 }
 @media (max-width: 479.98px){
 	.invoice__table {
@@ -424,6 +428,6 @@ tfoot td {
 	}
 	.footer__area {
 		flex: 0 0 100%;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
 }
