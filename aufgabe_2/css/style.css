@@ -101,13 +101,14 @@ body {
 	font-size: clamp(0.625rem, 0.633vw + 0.498rem, 0.813rem);
 	line-height: 1.5;
 	font-weight: 300;
+	background-color: #c2d7f7;
 }
 .wrapper {
 	min-height: 100%;
 	overflow: clip;
-	background-color: #c2d7f7;
+	background-color: #fff;
 	/* background-color: #FBFDFF; */
-	box-shadow: -4px 4px 6px #BCC4CC, 8px 5px 5px rgba(188, 196, 204, 0.5);
+	box-shadow: -4px 4px 6px #787d82, 8px 5px 5px rgba(101, 106, 110, 0.5);
 	max-width: 21cm;
 	margin-inline: auto;
 
