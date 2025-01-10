@@ -98,13 +98,15 @@
 
 body {
 	font-family: "Open Sans", serif;
-	font-size: 0.355cm;
-	line-height: 1.3;
+	font-size: clamp(0.625rem, 0.633vw + 0.498rem, 0.813rem);
+	line-height: 1.5;
+	font-weight: 300;
 }
 .wrapper {
 	min-height: 100%;
 	overflow: clip;
-	background-color: #FBFDFF;
+	background-color: #c2d7f7;
+	/* background-color: #FBFDFF; */
 	box-shadow: -4px 4px 6px #BCC4CC, 8px 5px 5px rgba(188, 196, 204, 0.5);
 	max-width: 21cm;
 	margin-inline: auto;
@@ -122,11 +124,11 @@ body {
 
 /* ----HEADER----- */
 .header {
-	margin-block: 0.3cm 0.35cm;
+	margin-block-end: 0.7cm;
 }
 .header__container {
 	background-color: #4d88c7;
-	height: 3.8cm;
+	height: 3.7cm;
 
 	display: flex;
 	align-items: center;
@@ -134,26 +136,33 @@ body {
 	gap: 0.5cm;
 }
 .header__laptop-image {
-	aspect-ratio: 9 / 4.3;
-	flex: 0 0 9cm;
+	aspect-ratio: 8.98 / 4.4;
+	flex: 0 0 8.98cm;
+
+	position: relative;
 }
 .header__laptop-image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-.header__logo {
-	aspect-ratio: 7 / 2.68;
-	flex: 0 0 7cm;
 
-	margin-inline-end: 1.4cm;
+	position: absolute;
+	top: 0.38cm;
+}
+.header__logo{
+	flex: 0 0 40.4762%; /* 8.5/21 */
+	justify-self: start;
+	line-height: 1;
+}
+.header__content-logo {
+	width: 71.2644%; /* 6.2/8.7 */
+	aspect-ratio: 6.2 / 2.4;
 }
 .header__logo p{
 	color: #fff;
-	font-size: clamp(0.5rem, 2.743vw - 0.049rem, 1.313rem);
+	font-size: clamp(0.5rem, 2.321vw + 0.036rem, 1.188rem);
 	text-transform: uppercase;
 	font-weight: 500;
-	padding-block-end: 0.5cm;
 }
 .header__logo span {
 	font-weight: 100;
@@ -168,6 +177,7 @@ body {
 	margin-block-end: 0.423cm;
 }
 .insel {}
+
 .insel__container {
 	padding-inline: calc(2cm - 0.3cm) calc(1cm - 0.18cm);
 }
@@ -184,7 +194,7 @@ body {
 	padding-inline-start: 0.5cm;
 }
 .insel__name {
-	font-size: 0.31cm;
+	font-size: clamp(0.5rem, 0.633vw + 0.373rem, 0.688rem);
 	text-decoration: underline;
 	min-height: 1.77cm;
 
@@ -194,17 +204,20 @@ body {
 }
 
 .insel__address {
+	font-size: clamp(0.563rem, 0.422vw + 0.478rem, 0.688rem);
 	min-height: 2.73cm;
 }
 .insel__contact-info {
-	padding-block-start: 0.35cm;
+	padding-block-start: 0.5cm;
 	flex: 0 0 calc(7.5cm + 0.2cm);
 
 	display: flex;
 	justify-content: space-between;
 	gap: 0.3cm;
 }
-.insel__contact {}
+.insel__contact {
+		font-weight: 400;
+}
 .insel__contact-details {}
 
 /* ----invoice---- */
@@ -237,17 +250,18 @@ body {
 	font-size: 0.45cm;
 }
 .table__body tr:last-child{
-	border-bottom: 0.0265cm solid #000;
+	border-bottom: 0.015cm solid #000;
 }
 .table__head{
-	border-bottom: 0.0265cm solid #000;
+	border-bottom: 0.015cm solid #000;
+	border-top: 0.015cm solid #000;
 	text-align: center;
 }
 .table__number{
 	width: 0.5cm;
 }
 .table__digital{
-border-bottom: 0.0265cm solid #000;	
+border-bottom: 0.015cm solid #000;
 }
 .table__product-name {}
 .table__quantity,
@@ -260,6 +274,9 @@ text-align: center;
 .table__line th:not(:last-child){
 	text-align: center;
 }
+.table__line th:nth-child(2){
+	text-align: left;
+}
 tfoot td {
 	text-align: right;
 }
@@ -267,19 +284,16 @@ tfoot td {
 
 /* -------FOOTER------ */
 .footer {
-	font-size: 0.3cm;
-	line-height: 1.2;
-	margin-block-end: 0.3cm;
+	font-size: clamp(0.438rem, 1.013vw + 0.235rem, 0.688rem);
 }
 .footer__container {
-	padding-inline: calc(2.5cm - 0.2cm) calc(2cm - 0.2cm);
 	position: relative;
 }
 .footer__container::after {
 	content: "";
 	background: url('../img/gotocoder__wellen.svg') 0 0 / cover no-repeat;
-	height: 0.9cm;
-	width: 18cm;
+	height: 24%;
+	width: 100%;
 	aspect-ratio: 18 / 0.9;
 
 	position: absolute;
@@ -291,21 +305,17 @@ tfoot td {
 	justify-content: space-between;
 	gap: 0.1cm;
 	align-items: end;
-	padding-block-start: 0.35cm;
 }
 .footer__area{
-	flex: 0 0 11cm;
+	flex: 0 0 61.3%; /* 11/21 */
 	color: #4C88C7;
 	display: flex;
-	gap: 0.2cm;
-	padding-block-end: 0.8cm;
-
+	gap: 0.3cm;
+	padding-block-end: 1.2cm;
+	padding-inline-start: calc(2.5cm - 0.2cm);
 }
 .footer__area span{
 	color: #000;
-}
-.footer__area strong {
-	font-weight: 400;
 }
 .footer__pages {
 	text-align: right;
@@ -331,81 +341,63 @@ tfoot td {
 
 	position: absolute;
 	bottom: 0cm;
-	right: 0.9cm;
+	right: 0;
 }
 
 /* -------media------ */
+@media (max-width: 785px){
+	.footer__backgraund-insel {
+			flex: 1 1 38.0952%;
+			/* 8/21 */
+		}
+}
 
 @media (max-width: 715px){
+	.header__container {
+			height: 12.1212%; /* 3.6/29.7 */
+		}
 	.insel__contact-info {
-		flex: 0 1 35.7143%; /* 7.5/21 */
+		flex: 0 0 35.7143%; /* 7.5/21 */
 	}
 	.insel__company-info {
-		flex: 0 1 40.4762%; /* 8.5/21 */
+		flex: 0 0 40.4762%; /* 8.5/21 */
 	}
-	.header__container {
-		height: 12.7946%; /* 3.8/29.7 */
-	}
-	.header__laptop-image {
-		flex: 0 1 42.8571%; /* 9/21 */
-	}
-		.header__logo {
-			flex: 0 1 33.3333%; /* 7/21 */
-			margin-inline-end: 10px;
-		}
-		.footer__backgraund-insel {
-			flex: 1 1 38.0952%;
-		}
-		.insel__container {
-			padding-inline: 20px 15px;
-		}
-		.insel__invoice {
-			padding-inline: 5px;
-		}
-		.footer__container {
-			padding-inline: 15px 10px;
-		}
-		.footer__backgraund-insel img {
-			right: 0.3cm;
-		}
-		.footer__container::after {
-			width: 90%;
-		}
-		.footer {
-			font-size: clamp(0.438rem, 1.013vw + 0.235rem, 0.688rem);
-		}
-}
-@media (max-width: 610px){
-	.footer__area {
-		flex: 0 0 52.381%; 
-		flex-wrap: wrap;
-	}
-}
-@media (max-width: 540px){
-	.footer__info {
-		flex: 1 1 100%;
-	}
-	.footer__bank-details{
-		flex: 1 1 100%;
-	}
-
-}
-@media (max-width: 479.98px){
 	.invoice__table {
-		font-size: clamp(0.5rem, 3.145vw - 0.129rem, 0.813rem);
+		font-size: clamp(0.5rem, 1.057vw + 0.289rem, 0.813rem);
 	}
 	.invoice__table strong {
-		font-size: clamp(0.75rem, 3.145vw + 0.121rem, 1.063rem);
+		font-size: clamp(0.75rem, 1.057vw + 0.539rem, 1.063rem);
 	}
 	.insel__name {
-		font-size: clamp(0.625rem, 1.258vw + 0.373rem, 0.75rem);
+		font-size: clamp(0.625rem, 0.423vw + 0.54rem, 0.75rem);
+	}
+	.header__laptop-image img {
+		top: 1.2795%; /* 0.38/29.7 */
+	}
+}
+@media (max-width: 700px) {
+	.header__laptop-image {
+		flex: 0 1 42.7619%;
+		/* 8.98/21 */
+	}
+	.footer__area {
+		padding-inline-start: clamp(0.313rem, 23.421vw - 4.372rem, 5.875rem);
+	}
+	.insel__invoice {
+		padding-inline-start: clamp(0.313rem, 3.421vw - 0.372rem, 1.125rem);
+		padding-inline-end: clamp(0.313rem, 8.421vw - 1.372rem, 2.313rem);
+	}
+	.insel__container {
+		padding-inline-start: clamp(0.313rem, 18.421vw - 3.372rem, 4.688rem);
+		padding-inline-end: clamp(0.313rem, 8.421vw - 1.372rem, 2.313rem);
+	}
+}
+@media (max-width: 479.98px){
+	.insel__name {
 		min-height: 5.9596%; /* 1.77/29.7 */
 	}
 	.insel__address{
 		min-height: 9.1919%; /* 2.73/29.7 */
-	}
-	body {
-		font-size: clamp(0.625rem, 1.887vw + 0.248rem, 0.813rem);
 	}
 	.insel__info{
 		flex-wrap: wrap;
@@ -417,17 +409,4 @@ tfoot td {
 	.insel__contact-info {
 		flex: 1 1 100%;
 		}
-
-}
-@media (max-width: 432px) {
-	.footer__backgraund-insel {
-			display: none;
-		}
-	.footer__container::after {
-		width: 100%;
-	}
-	.footer__area {
-		flex: 0 0 100%;
-		flex-wrap: nowrap;
-	}
 }
