@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_21_SCSS</title>
+	<base target="_blank" href="">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="img/header/hero-logo.svg" alt="logo">
+				</div>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Home</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link active">Movies & Shows</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Support</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Subscriptions</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<a href="#" class="actions-header__item">
+						<img src="img/header/hero-search.svg" alt="Icon search.">
+					</a>
+					<a href="#" class="actions-header__item">
+						<img src="img/header/hero-call-icon.svg" alt="Icon contact.">
+					</a>
+					<button class="actions-header__icon icon-menu" type="button"
+						aria-label="open/close menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__body">
+						<div class="hero__video">
+							<video id="video" poster="img/hero/hero-background-full-version.webp"
+								src="img/video/domiy.webm"></video>
+						</div>
+						<div class="hero__content">
+							<div class="hero__description">
+								<h1 class="hero__title title">Avengers : Endgame</h1>
+								<div class="hero__text">
+									<p>With the help of remaining allies, the Avengers must assemble once more in order to undo
+										Thanos's actions and undo the
+										chaos to the universe, no matter what consequences may be in store, and no matter who they
+										face... Avenge the fallen.</p>
+								</div>
+							</div>
+							<div class="hero__actions actions-hero">
+								<button id="play" type="button" class="actions-hero__button button"><span>Play
+										Now</span></button>
+								<ul class="actions-hero__items">
+									<li class="actions-hero__item"><a href="#">
+											<img src="img/hero/hero-add-icon.svg" alt="Icon add.">
+										</a></li>
+									<li class="actions-hero__item"><a href="#">
+											<img src="img/hero/hero-like-icon.svg" alt="Icon like.">
+										</a></li>
+									<li class="actions-hero__item"><a href="#">
+											<img src="img/hero/hero-volume-icon.svg" alt="Icon volume.">
+										</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="hero__slider slider">
+							<button class="slider__controls" aria-label="switch to previous slide">
+								<img src="img/hero/hero-slider-left-icon.svg" alt="White left-arrow.">
+							</button>
+							<div class="slider__items">
+								<button class="slider__item active-slider" aria-label="switch to next slide"></button>
+								<button class="slider__item" aria-label="switch to next slide"></button>
+								<button class="slider__item" aria-label="switch to next slide"></button>
+								<button class="slider__item" aria-label="switch to next slide"></button>
+								<button class="slider__item" aria-label="switch to next slide"></button>
+							</div>
+							<button class="slider__controls slider__controls" aria-label="switch to previous slide">
+								<img src="img/hero/hero-slider-right-icon.svg" alt="White right-arrow.">
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="movies">
+				<div class="movies__container">
+					<div class="movies__body">
+						<a class="movies__button button" href="#"><span>Movies</span></a>
+						<div class="movies__area">
+							<section class="movies__genres">
+								<div class="movies__head head">
+									<h2 class="head__title title">Our Genres</h2>
+									<div class="head__slider slider slider--small">
+										<button class="slider__controls slider__controls--small"
+											aria-label="switch to previous slide">
+											<img src="img/hero/hero-slider-left-icon.svg" alt="White left-arrow.">
+										</button>
+										<div class="slider__items">
+											<button class="slider__item active-slider" aria-label="switch to next slide"></button>
+											<button class="slider__item" aria-label="switch to next slide"></button>
+											<button class="slider__item" aria-label="switch to next slide"></button>
+											<button class="slider__item" aria-label="switch to next slide"></button>
+											<button class="slider__item" aria-label="switch to next slide"></button>
+										</div>
+										<button class="slider__controls slider__controls--small"
+											aria-label="switch to previous slide">
+											<img src="img/hero/hero-slider-right-icon.svg" alt="White right-arrow.">
+										</button>
+									</div>
+								</div>
+								<ul class="movies__cards cards">
+									<li class="cards__card card">
+										<article class="card__article">
+											<a class="card__link" href="#">
+												<ul class="card__posters posters">
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-1.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-2.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-3.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-4.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-1.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-2.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-3.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-4.webp" alt="Image">
+													</li>
+												</ul>
+												<div class="card__description">
+													<h3 class="card__subtitle">Action</h3>
+													<img src="img/hero/hero-slider-right-icon.svg" alt="" class="">
+												</div>
+											</a>
+										</article>
+									</li>
+									<li class="cards__card card">
+										<article class="card__article">
+											<a class="card__link" href="#">
+												<ul class="card__posters posters">
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-1.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-2.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-3.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-4.webp" alt="Image">
+													</li>
+												</ul>
+												<div class="card__description">
+													<h3 class="card__subtitle">Action</h3>
+													<img src="img/hero/hero-slider-right-icon.svg" alt="" class="">
+												</div>
+											</a>
+										</article>
+									</li>
+									<li class="cards__card card">
+										<article class="card__article">
+											<a class="card__link" href="#">
+												<ul class="card__posters posters">
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-1.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-2.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-3.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-4.webp" alt="Image">
+													</li>
+												</ul>
+												<div class="card__description">
+													<h3 class="card__subtitle">Action</h3>
+													<img src="img/hero/hero-slider-right-icon.svg" alt="" class="">
+												</div>
+											</a>
+										</article>
+									</li>
+									<li class="cards__card card">
+										<article class="card__article">
+											<a class="card__link" href="#">
+												<ul class="card__posters posters">
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-1.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-2.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-3.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-4.webp" alt="Image">
+													</li>
+												</ul>
+												<div class="card__description">
+													<h3 class="card__subtitle">Action</h3>
+													<img src="img/hero/hero-slider-right-icon.svg" alt="" class="">
+												</div>
+											</a>
+										</article>
+									</li>
+									<li class="cards__card card">
+										<article class="card__article">
+											<a class="card__link" href="#">
+												<ul class="card__posters posters">
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-1.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-2.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-3.webp" alt="Image">
+													</li>
+													<li class="posters__poster">
+														<img src="img/movies/movies_genres-action-4.webp" alt="Image">
+													</li>
+												</ul>
+												<div class="card__description">
+													<h3 class="card__subtitle">Action</h3>
+													<img src="img/hero/hero-slider-right-icon.svg" alt="" class="">
+												</div>
+											</a>
+										</article>
+									</li>
+
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
