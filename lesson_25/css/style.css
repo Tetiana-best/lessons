@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+/*-------------*/
+/* Adaptive Value */
+/* Icon styles */
+/* Styles for card */
+/* Variables */
+:root {
+  --font-family: "Manrope", sans-serif;
+  --font-size2: toRem(14);
+  --font-size3: toRem(18);
+  --font-size4: toRem(20);
+  --font-size5: toRem(12);
+  --main-tcolor: #999999;
+  --secondary-tcolor: #ffffff;
+  --third-tcolor: #bfbfbf;
+  --some-tcolor: #f1f1f3;
+  --dark-bg: #141414;
+  --dark-bg2: #1a1a1a;
+  --dark-bg3: #0f0f0f;
+  --dark-bg4: #1f1f1f;
+  --dark-bg5: #333333;
+  --btn-bg: #e50000;
+  --btn-bghover: green;
+  --bd-coldark1: #262626;
+  --bd-coldark2: #1f1f1f;
+  --bd-colwhite: #ffffff;
+  --bd-colgrey: #999999;
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/* DM Sans */
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* ------------------------------------------------------------------ */
+body {
+  color: var(--main-tcolor);
+  font-family: var(--font-family);
+  background-color: var(--dark-bg);
+}
+
+.opacity {
+  opacity: 1;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 101.875rem;
+  margin-inline: auto;
+  padding-inline: 0.9375rem;
+}
+
+.header {
+  background-color: green;
+  height: 100px;
+}
+
+.item,
+.item-scroll {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(231, 12, 176, 0.575);
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  width: 150px;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: inherit;
+  -webkit-transition: color 0.3s, -webkit-text-decoration 0.3s;
+  transition: color 0.3s, -webkit-text-decoration 0.3s;
+  transition: text-decoration 0.3s, color 0.3s;
+  transition: text-decoration 0.3s, color 0.3s, -webkit-text-decoration 0.3s;
+}
+@media (any-hover: hover) {
+  .item:hover,
+  .item-scroll:hover {
+    text-decoration: underline;
+    color: yellow;
+    -webkit-transition: color 0.6s, -webkit-text-decoration 0.6s;
+    transition: color 0.6s, -webkit-text-decoration 0.6s;
+    transition: text-decoration 0.6s, color 0.6s;
+    transition: text-decoration 0.6s, color 0.6s, -webkit-text-decoration 0.6s;
+  }
+}
+
+.text {
+  width: 30%;
+}
+
+.footer {
+  background-color: yellowgreen;
+  height: 100px;
+}
+
+.footer__color_on {
+  background-color: red;
+}
